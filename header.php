@@ -34,16 +34,16 @@
               Our Menu
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="srilankan.html">Srilankan</a></li>
-              <li><a class="dropdown-item" href="indian.html">Indian</a></li>                  
+              <li><a class="dropdown-item" href="srilankan.php">Srilankan</a></li>
+              <li><a class="dropdown-item" href="indian.php">Indian</a></li>                  
               <li><a class="dropdown-item" href="chinese.php">Chinese</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="gallery.html">Gallery</a>
+            <a class="nav-link active" href="gallery.php">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="contactus.html">Contact us</a>
+            <a class="nav-link active" href="contactus.php">Contact us</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
