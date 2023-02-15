@@ -58,7 +58,7 @@ if (isset($_POST['submit'])){
     $notes = $_POST['notes'];
 
     include('db.php');
-    $sql = "insert into studentinfo (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
+    $sql = "insert into tblreserv (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
     values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
 
     if($conn -> query($sql) === true){
