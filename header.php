@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -37,7 +36,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="srilankan.html">Srilankan</a></li>
               <li><a class="dropdown-item" href="indian.html">Indian</a></li>                  
-              <li><a class="dropdown-item" href="chinese.html">Chinese</a></li>
+              <li><a class="dropdown-item" href="chinese.php">Chinese</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -45,9 +44,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="contact.html">Contact us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="ex1.php">Exercise 1</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
