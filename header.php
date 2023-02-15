@@ -43,7 +43,7 @@
             <a class="nav-link active" href="gallery.html">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact us</a>
+            <a class="nav-link active" href="contactus.html">Contact us</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
