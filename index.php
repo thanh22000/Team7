@@ -76,13 +76,13 @@
         <div class="cusions">
         <div class="row" style="font-size: 25px; text-align: center; font-weight: bold; font-style: italic; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: aliceblue;">
             <div class="col-md-4">                
-                <a href="srilankan.html">Srilankan</a>
+                <a href="srilankan.php">Srilankan</a>
             </div>
             <div class="col-md-4">
-              <a href="indian.html">Indian</a>
+              <a href="indian.php">Indian</a>
             </div>
             <div class="col-md-4" >
-              <a href="chinese.html">Chinese</a>
+              <a href="chinese.php">Chinese</a>
             </div>
             <p></p><p></p>
           </div>  

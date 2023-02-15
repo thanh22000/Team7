@@ -100,9 +100,15 @@ display: grid;
 grid-template-columns: 350px 350px 350px;
 gap: 60px;
 justify-content: center;
-
-
 }
+
+.gallery{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    gap: 60px;
+    justify-content: center;
+}
+
 
 * {
     box-sizing: border-box;
