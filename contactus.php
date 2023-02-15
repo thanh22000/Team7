@@ -1,4 +1,4 @@
-<?php include "vg-header.php"; ?>
+<?php include "header.php"; ?>
 
 <div class="row">
     <div class="col-md-6" style="color: aliceblue; text-align: center; font-size:35px; color: cornflowerblue; font-weight: bold; font-style: italic;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
@@ -57,4 +57,4 @@
             
 
 
-<?php include "vg-footer.php" ?>
+<?php include "footer.php" ?>
