@@ -4,7 +4,7 @@ include 'layout/header.php'; ?>
 
 <div class="row">
     <div class="col-md-6" style="font-size: 65px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue; padding-top: 50px;">
-      <p1>It’s not just food....<br>
+      <p1>It's not just food....<br>
         Its an incredible <br>
         Experience...!</p1>
     </div>
