@@ -1,6 +1,6 @@
 <?php 
 $title = "Home Page";
-include "layout/header.php"; ?>
+include 'layout/header.php'; ?>
 
 <div class="row">
     <div class="col-md-6" style="font-size: 65px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue; padding-top: 50px;">
@@ -17,21 +17,21 @@ include "layout/header.php"; ?>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/stringhoppers2.jpeg" class="d-block w-100" alt="stringhoppers" style="height: 450px; width: 350px;">
+            <img src="layout/Images/stringhoppers2.jpeg" class="d-block w-100" alt="stringhoppers" style="height: 450px; width: 350px;">
             <div class="carousel-caption d-none d-md-block" style="color: cornsilk; font-weight: bold;">
               <h3>String Hoppers</h3>
               
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/idly2.jpg" class="d-block w-100" alt="idly" style="height: 450px; width: 350px;" >
+            <img src="layout/Images/idly2.jpg" class="d-block w-100" alt="idly" style="height: 450px; width: 350px;" >
             <div class="carousel-caption d-none d-md-block" style="color:cornsilk; font-weight: bold;">
               <h3>Idly</h3>
               
             </div>
         </div>
           <div class="carousel-item">
-            <img src="images/noodles3.jpg" class="d-block w-100" alt="noodles" style="height: 450px; width: 350px;">
+            <img src="layout/Images/noodles3.jpg" class="d-block w-100" alt="noodles" style="height: 450px; width: 350px;">
             <div class="carousel-caption d-none d-md-block" style="color:cornsilk; font-weight: bold;">
               <h3>Noodles</h3>
               
@@ -53,42 +53,42 @@ include "layout/header.php"; ?>
     
     <div class="cards" style="padding-top: 40px; padding-bottom: 30px;">
         <div class="card">
-            <img src="images/pittu.jpeg" alt="pittu" style="height: 180px; width: 180px;">
+            <img src="layout/Images/pittu.jpeg" alt="pittu" style="height: 180px; width: 180px;">
             </div>
     
         <div class="card" >
-            <img src="images/stringhoppers.jpeg" alt="stringhoppers" style="height: 180px; width: 180px;">
+            <img src="layout/Images/stringhoppers.jpeg" alt="stringhoppers" style="height: 180px; width: 180px;">
             </div>
     
         <div class="card">
-            <img src="images/idly.jpeg" alt="idly" style="height: 180px; width: 180px;">
+            <img src="layout/Images/idly.jpeg" alt="idly" style="height: 180px; width: 180px;">
             </div>
     
         <div class="card">
-            <img src="images/dhosa.jpeg" alt="dhosa" style="height: 180px; width: 180px;">
+            <img src="layout/Images/dhosa.jpeg" alt="dhosa" style="height: 180px; width: 180px;">
         </div>
         <div class="card">
-            <img src="images/noodles.jpeg" alt="noodles" style="height: 180px; width: 180px;">
+            <img src="layout/Images/noodles.jpeg" alt="noodles" style="height: 180px; width: 180px;">
         </div>
         <div class="card">
-            <img src="images/potatos.jpeg" alt="potatos" style="height: 180px; width: 180px;">
+            <img src="layout/Images/potatos.jpeg" alt="potatos" style="height: 180px; width: 180px;">
         </div>
         </div>
 
         <div class="cusions">
         <div class="row" style="font-size: 25px; text-align: center; font-weight: bold; font-style: italic; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: aliceblue;">
             <div class="col-md-4">                
-                <a href="srilankan.php">Srilankan</a>
+                <a href="http://localhost:81/Team7/layout/srilankan.php">Srilankan</a>
             </div>
             <div class="col-md-4">
-              <a href="indian.php">Indian</a>
+              <a href="http://localhost:81/Team7/layout/indian.php">Indian</a>
             </div>
             <div class="col-md-4" >
-              <a href="chinese.php">Chinese</a>
+              <a href="http://localhost:81/Team7/layout/chinese.php">Chinese</a>
             </div>
             <p></p><p></p>
           </div>  
         </div>
     
 
-<?php include "layout/footer.php" ?>
+<?php include 'layout/footer.php'; ?>

@@ -1,6 +1,6 @@
 <?php
 $title = "Gallery";
-include 'layout/header.php';
+include 'header.php';
 ?>
 
 <br>
@@ -9,49 +9,49 @@ include 'layout/header.php';
 
     <div class="gallery">
         <div class="card" >
-            <img src="images/gallery4.jpg" alt="pittu" style="height: 550px; width: 400px;">
+            <img src="../Images/gallery4.jpg" alt="pittu" style="height: 550px; width: 400px;">
                  </div>
     
         <div class="card" >
-            <img src="images/gallery5.jpg" alt="stringhoppers" style="height: 550px; width: 400px;">
+            <img src="../Images/gallery5.jpg" alt="stringhoppers" style="height: 550px; width: 400px;">
             
             </div>
     
         <div class="card" >
-            <img src="images/gallery8.jpg" alt="idly" style="height: 550px; width: 400px;">
+            <img src="../Images/gallery8.jpg" alt="idly" style="height: 550px; width: 400px;">
             
             </div>
         </div><br>
 
         <div class="gallery">
             <div class="card" >
-                <img src="images/gallery1.jpg" alt="roti" style="height: 250px; width: 400px;">
+                <img src="../Images/gallery1.jpg" alt="roti" style="height: 250px; width: 400px;">
                 
                 </div>
         
             <div class="card" >
-                <img src="images/gallery6.jpg" alt="hoppers" style="height: 250px; width: 400px;">
+                <img src="../Images/gallery6.jpg" alt="hoppers" style="height: 250px; width: 400px;">
                 
                 </div>
         
             <div class="card" >
-                <img src="images/gallery12.jpg" alt="ricencurry" style="height: 250px; width: 400px;">
+                <img src="../Images/gallery12.jpg" alt="ricencurry" style="height: 250px; width: 400px;">
                 
                 </div>
             </div><br>
         
             <div class="gallery">
                 <div class="card" >
-                    <img src="images/gallery7.jpg" alt="pittu" style="height: 550px; width: 400px;">
+                    <img src="../Images/gallery7.jpg" alt="pittu" style="height: 550px; width: 400px;">
                          </div>
             
                 <div class="card" >
-                    <img src="images/gallery10.jpg" alt="stringhoppers" style="height: 550px; width: 400px;">
+                    <img src="../Images/gallery10.jpg" alt="stringhoppers" style="height: 550px; width: 400px;">
                     
                     </div>
             
                 <div class="card" >
-                    <img src="images/gallery11.jpg" alt="idly" style="height: 550px; width: 400px;">
+                    <img src="../Images/gallery11.jpg" alt="idly" style="height: 550px; width: 400px;">
                     
                     </div>
                 </div><br>
@@ -61,7 +61,7 @@ include 'layout/header.php';
             <br>
 
             <?php
-            include 'layout/footer.php';
+            include 'footer.php';
             ?>
             
             
