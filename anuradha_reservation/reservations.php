@@ -1,5 +1,6 @@
-<?php $title = "Online table reservation";
-include"../header.php"; ?>
+<?php 
+$title = "Online table reservation";
+include "../layout/header.php"; ?>
 
 <form method = "post" action = "">
     <div class =reservation style="padding-left: 200px; padding-right: 200px;">
@@ -73,4 +74,5 @@ if (isset($_POST['submit'])){
 
 ?>
 
-<?php  include"../footer.php";?>
+<?php  
+include "../layout/footer.php";?>
