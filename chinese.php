@@ -1,5 +1,6 @@
 <?php 
-include "header.php" ?>
+$title = "Chinese Food";
+include "layout/header.php" ?>
 
 
 
@@ -60,4 +61,4 @@ include "header.php" ?>
         
 
 
-<?php include "footer.php" ?> 
+<?php include "layout/footer.php" ?> 

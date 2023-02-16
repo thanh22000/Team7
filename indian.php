@@ -1,4 +1,6 @@
-<?php include 'header.php'; ?>
+<?php 
+$title = "Indian Food";
+include 'layout/header.php'; ?>
 
 <h2>INDIAN FOOD</h2 style="text-align:center"><br>
 
@@ -54,4 +56,4 @@
 
 
 
-<?php include 'footer.php'; ?>
+<?php include 'layout/footer.php'; ?>

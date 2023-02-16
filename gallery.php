@@ -1,5 +1,6 @@
 <?php
-include 'header.php';
+$title = "Gallery";
+include 'layout/header.php';
 ?>
 
 <br>
@@ -60,7 +61,7 @@ include 'header.php';
             <br>
 
             <?php
-            include 'footer.php';
+            include 'layout/footer.php';
             ?>
             
             

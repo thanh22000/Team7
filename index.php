@@ -1,4 +1,6 @@
-<?php include "header.php"; ?>
+<?php 
+$title = "Home Page";
+include "layout/header.php"; ?>
 
 <div class="row">
     <div class="col-md-6" style="font-size: 65px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue; padding-top: 50px;">
@@ -89,4 +91,4 @@
         </div>
     
 
-<?php include "footer.php" ?>
+<?php include "layout/footer.php" ?>

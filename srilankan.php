@@ -1,5 +1,6 @@
-
-<?php include 'header.php'; ?>
+<?php 
+$title = "Srilankan Food";
+include 'layout/header.php'; ?>
 
 <h2>SRILANKAN FOOD</h2 style="text-align:center; "><br>
 
@@ -52,4 +53,4 @@
 
             <br>
             <br>
-            <?php include 'footer.php'; ?>
+            <?php include 'layout/footer.php'; ?>
