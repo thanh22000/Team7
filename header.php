@@ -107,7 +107,7 @@
       .container-fluid ul li{
         padding: 0 15px; }
       body{
-        background-image: url("Images/Background.jpg");}
+        background-image: url("Images/background.jpg");}
     </style>  
     <div class="container">
 
