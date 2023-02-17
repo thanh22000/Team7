@@ -22,7 +22,6 @@
       font-size: 30px;
       color: aliceblue;}
     .navbar{
-      overflow: hidden;
       padding-top: 0;
       padding-bottom: 0;
       font-weight: bolder;}
