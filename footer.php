@@ -1,5 +1,6 @@
         <footer>
-          <div class="row" style="background-color: black; color: aliceblue; ">
+           <div class = "container">
+          <div class="row" style="background-color: black; color: aliceblue;">
             <div class="col-md-4">
                 <p></p>
                 <p>Address :
@@ -34,5 +35,12 @@
                 <p>All reight reserved @2023 Web Design</p>
             </div>              
           </div>
+      </div>
         </footer>
-        </html>
+      
+        <style>
+
+    .container{
+      width: 1400px;
+      }
+      </style>
