@@ -120,7 +120,13 @@
         text-align: center;
         line-height: 50px;
         color: aliceblue;
-        font-size: 22px;
+        font-size: 22px;}
+        .shoppingcart{
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        color: black;
+        font-size: 18px;
       }
     </style>  
     <div class="container">
@@ -161,10 +167,7 @@
             <a class="nav-link active" href="#contact">Contact us</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        <a class="shoppingcart" href="#"> <i class="fa-solid fa-cart-shopping"></i> </a>
         </div>
     </div>
   </nav>
