@@ -1,6 +1,6 @@
         <footer>
            <div class = "container">
-          <div class="row" style="background-color: black; color: aliceblue;">
+          <div class="row" style="background-color: aliceblue; color: black;">
             <div class="col-md-4">
                 <p></p>
                 <p>Address :
