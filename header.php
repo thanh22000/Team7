@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php echo $title ?></title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/ea68801435.js" crossorigin="anonymous"></script>  
 </head>
 <body>
   <style>
@@ -108,6 +109,19 @@
         padding: 0 15px; }
       body{
         background-image: url("Images/background.jpg");}
+      .backtotop{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background: #27ae60;
+        bottom: 40px;
+        right: 50px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        color: aliceblue;
+        font-size: 22px;
+      }
     </style>  
     <div class="container">
 
@@ -117,7 +131,7 @@
             </div>
             <div class="col-md-10"> 
 
-    <h1>We bring the taste of Srilankan foods to Suomi </h1>
+    <h1 id="top">We bring the taste of Srilankan foods to Suomi </h1>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">

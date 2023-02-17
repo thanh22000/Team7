@@ -400,4 +400,5 @@ if (isset($_POST['submit'])){
         </div>
     </div>
 
+<a class="backtotop" href="#top"> <i class="fa-solid fa-arrow-up"></i></i> </a>
 <?php include 'footer.php'; ?>
