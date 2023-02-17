@@ -128,23 +128,23 @@
             <a class="nav-link active" href="http://localhost:81/Team7/index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href='http://localhost:81/Team7/reservations.php'>Reservation</a>
+            <a class="nav-link active" href='#reservation'>Reservation</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Our Menu
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="http://localhost:81/Team7/srilankan.php">Srilankan</a></li>
-              <li><a class="dropdown-item" href="http://localhost:81/Team7/indian.php">Indian</a></li>                  
-              <li><a class="dropdown-item" href="http://localhost:81/Team7/chinese.php">Chinese</a></li>
+              <li><a class="dropdown-item" href="#srilankan">Srilankan</a></li>
+              <li><a class="dropdown-item" href="#indian">Indian</a></li>                  
+              <li><a class="dropdown-item" href="#chinese">Chinese</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="http://localhost:81/Team7/gallery.php">Gallery</a>
+            <a class="nav-link active" href="#gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="http://localhost:81/Team7/contactus.php">Contact us</a>
+            <a class="nav-link active" href="#contact">Contact us</a>
           </li>
         </ul>
         <form class="d-flex" role="search">

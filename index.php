@@ -90,7 +90,7 @@ include 'header.php'; ?>
 <br><br><br>
 
 <!-- Gallery -->
-<h2 style="text-align:center;">GALLERY</h2><br>
+<h2 id="gallery" style="text-align:center;">GALLERY</h2><br>
 <div class="gallery">
   <div class="card" >
     <img src="Images/gallery4.jpg" alt="pittu" style="height: 550px; width: 400px;">
@@ -127,7 +127,7 @@ include 'header.php'; ?>
 <br><br>
 
 <!-- Reservation --> 
-<h2 style="text-align: center; color:aliceblue;">RESERVATION</h2>
+<h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2>
 <form method = "post" action = "">
     <div class =reservation style="padding-left: 200px; padding-right: 200px; color:aliceblue">
       <div class = "row">
@@ -200,7 +200,7 @@ if (isset($_POST['submit'])){
 <!-- Menu -->
 <h2 style="text-align: center">WHAT DO WE SERVE?</h2>
 <!-- Srilankan food -->
-<h3 style="text-align:center; color:aliceblue;">SRILANKAN FOOD</h3><br>
+<h3 id="srilankan" style="text-align:center; color:aliceblue;">SRILANKAN FOOD</h3><br>
 
     <div class="menu">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
@@ -249,7 +249,7 @@ if (isset($_POST['submit'])){
     </div>
 <br><br>
 <!-- Indian food -->
-<h3 style="text-align:center; color:aliceblue;">INDIAN FOOD</h3><br>
+<h3 id="indian" style="text-align:center; color:aliceblue;">INDIAN FOOD</h3><br>
     <div class="menu">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
             <img src="Images/ulunduwada.jpeg" alt="ulunduwada" style="height: 250px; width: 350px;">
@@ -297,7 +297,7 @@ if (isset($_POST['submit'])){
             </div>
 <br><br>
 <!-- Chinese food -->
-<h3 style="text-align:center; color:aliceblue;">CHINESE FOOD</h3><br>
+<h3 id="chinese" style="text-align:center; color:aliceblue;">CHINESE FOOD</h3><br>
 
     <div class="menu">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
@@ -347,7 +347,7 @@ if (isset($_POST['submit'])){
 <br><br>
 
 <!-- Contact us -->
-<h2 style="text-align:center; color:aliceblue;">CONTACT US</h2><br>
+<h2 id="contact" style="text-align:center; color:aliceblue;">CONTACT US</h2><br>
 <div class="row">
     <div class="col-md-6" style="color: aliceblue; text-align: center; font-size:35px; color: cornflowerblue; font-weight: bold; font-style: italic;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
          
