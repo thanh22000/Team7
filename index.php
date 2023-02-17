@@ -74,7 +74,7 @@ include 'header.php'; ?>
       <a href="#srilankan">Srilankan</a>
     </div>
     <div class="col-md-4">
-      <a href="http://localhost:81/Team7/indian.php">Indian</a>
+      <a href="#indian">Indian</a>
     </div>
     <div class="col-md-4" >
       <a href="http://localhost:81/Team7/chinese.php">Chinese</a>
