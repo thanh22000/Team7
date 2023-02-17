@@ -86,7 +86,7 @@ include 'header.php'; ?>
 
 <!-- About us -->
 <br>
-<h2 style="text-align: center; color:aliceblue;"> ABOUT US </h2>
+<h2 id="aboutus" style="text-align: center; color:aliceblue;"> ABOUT US </h2>
 <br><br><br>
 
 <!-- Gallery -->
