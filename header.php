@@ -6,8 +6,6 @@
   <title><?php echo $title ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/ea68801435.js" crossorigin="anonymous"></script>  
-</head>
-<body>
   <style>
     .container{
       width: 1400px;}
@@ -24,6 +22,7 @@
       font-size: 30px;
       color: aliceblue;}
     .navbar{
+      overflow: hidden;
       padding-top: 0;
       padding-bottom: 0;
       font-weight: bolder;}
@@ -121,23 +120,25 @@
         line-height: 50px;
         color: aliceblue;
         font-size: 22px;}
-        .shoppingcart{
+      .shoppingcart{
         text-decoration: none;
         text-align: center;
         line-height: 50px;
         color: black;
-        font-size: 18px;
-      }
-    </style>  
-    
+        font-size: 18px;}
+
+    </style>
+</head>
+<body>     
 <!-- OUR PAGE -->   
 <div class="container">
-  <div class="row">
+  <div class="row" style="background-color:aliceblue;">
     <div class="col-md-2" style="padding-top: 15px;">
-      <img class="img-fluid" src="Images/logonobg.png" alt="logo" style="height: 120px; width: 220px; " > 
+      <img class="img-fluid" src="Images/logonobg.png" alt="logo" style="height: 70px; width: 140px; " > 
     </div>
     <div class="col-md-10"> 
-      <h1 id="top">We bring the taste of Srilankan foods to Suomi </h1>
+      <h1 id="top" style="color:black;">We bring the taste of Srilankan foods to Suomi </h1>
+    </div>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -167,9 +168,9 @@
         </div>
       </div>
       </nav>
-    </div>
+    
   </div>
-
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
