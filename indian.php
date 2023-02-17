@@ -3,7 +3,6 @@ $title = "Indian Food";
 include 'header.php'; ?>
 
 <h2>INDIAN FOOD</h2 style="text-align:center"><br>
-
     <div class="menu">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
             <img src="Images/ulunduwada.jpeg" alt="ulunduwada" style="height: 250px; width: 350px;">
