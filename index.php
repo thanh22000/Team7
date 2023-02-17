@@ -199,8 +199,8 @@ if (isset($_POST['submit'])){
 
 <!-- Menu -->
 <h2 style="text-align: center">WHAT DO WE SERVE?</h2>
-<!-- Srilankan food -->
-<h3 id="srilankan" style="text-align:center; color:aliceblue;">SRILANKAN FOOD</h3><br>
+<!-- Srilankan menu -->
+<h3 id="srilankan" style="text-align:center; color:aliceblue;">SRILANKAN MENU</h3><br>
 
     <div class="menu">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
@@ -248,8 +248,8 @@ if (isset($_POST['submit'])){
         </div>
     </div>
 <br><br>
-<!-- Indian food -->
-<h3 id="indian" style="text-align:center; color:aliceblue;">INDIAN FOOD</h3><br>
+<!-- Indian menu -->
+<h3 id="indian" style="text-align:center; color:aliceblue;">INDIAN MENU</h3><br>
     <div class="menu">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
             <img src="Images/ulunduwada.jpeg" alt="ulunduwada" style="height: 250px; width: 350px;">
@@ -296,8 +296,8 @@ if (isset($_POST['submit'])){
                 </div>
             </div>
 <br><br>
-<!-- Chinese food -->
-<h3 id="chinese" style="text-align:center; color:aliceblue;">CHINESE FOOD</h3><br>
+<!-- Chinese menu -->
+<h3 id="chinese" style="text-align:center; color:aliceblue;">CHINESE MENU</h3><br>
 
     <div class="menu">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
