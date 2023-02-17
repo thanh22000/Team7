@@ -63,7 +63,7 @@ if (isset($_POST['submit'])){
     values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
 
     if($conn -> query($sql) === true){
-        echo "Your information is added successfully.";
+        echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
     }
     else {
         echo "Error : " .$conn->error;
