@@ -3,7 +3,7 @@ $title = "Online table reservation";
 include "header.php"; ?>
 
 <form method = "post" action = "">
-    <div class =reservation style="padding-left: 200px; padding-right: 200px;">
+    <div class =reservation style="padding-left: 200px; padding-right: 200px; color:aliceblue">
 <div class = "row">
     <div class = "col">
     Name <br> <input type = "text" name="fname" placeholder = "First name"  style="width: 300px;" required> </div>
@@ -13,7 +13,7 @@ include "header.php"; ?>
 
 <div class = "row">
     <div class = "col">
-    Email <br>  <input type = "email" name="email" style="width: 300px;" required> </div>
+    Email <br>  <input type = "email" name="email" style="width: 300px;;" required> </div>
     <div class = "col">
     Phone Number <br> <input type = "tel" name="phonenum" style="width: 300px;" required> </div>
 </div> <br>
