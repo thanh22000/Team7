@@ -12,7 +12,7 @@
       width: 1400px;}
     h1{   
       text-align: center;
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
       font-size: 45px;
       color: azure;
       padding-top: 25px;
@@ -128,23 +128,23 @@
             <a class="nav-link active" href="http://localhost:81/Team7/index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href='http://localhost:81/Team7/layout/reservations.php'>Reservation</a>
+            <a class="nav-link active" href='http://localhost:81/Team7/reservations.php'>Reservation</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Our Menu
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="http://localhost:81/Team7/layout/srilankan.php">Srilankan</a></li>
-              <li><a class="dropdown-item" href="http://localhost:81/Team7/layout/indian.php">Indian</a></li>                  
-              <li><a class="dropdown-item" href="http://localhost:81/Team7/layout/chinese.php">Chinese</a></li>
+              <li><a class="dropdown-item" href="http://localhost:81/Team7/srilankan.php">Srilankan</a></li>
+              <li><a class="dropdown-item" href="http://localhost:81/Team7/indian.php">Indian</a></li>                  
+              <li><a class="dropdown-item" href="http://localhost:81/Team7/chinese.php">Chinese</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="http://localhost:81/Team7/layout/gallery.php">Gallery</a>
+            <a class="nav-link active" href="http://localhost:81/Team7/gallery.php">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="http://localhost:81/Team7/layout/contactus.php">Contact us</a>
+            <a class="nav-link active" href="http://localhost:81/Team7/contactus.php">Contact us</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
