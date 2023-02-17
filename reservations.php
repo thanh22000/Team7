@@ -42,7 +42,7 @@ include "header.php"; ?>
     
     <input type = "submit" value = "Submit" name = "submit"> </div> 
 </div>
-    </div>
+    
 </form>
 
 <?php
@@ -73,6 +73,6 @@ if (isset($_POST['submit'])){
 
 
 ?>
-
+</div>
 <?php  
 include "footer.php";?>
