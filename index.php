@@ -71,7 +71,7 @@ include 'header.php'; ?>
 <div class="cusions">
   <div class="row" style="font-size: 25px; text-align: center; font-weight: bold; font-style: italic; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: aliceblue;">
     <div class="col-md-4">                
-      <a href="http://localhost:81/Team7/srilankan.php">Srilankan</a>
+      <a href="#srilankan">Srilankan</a>
     </div>
     <div class="col-md-4">
       <a href="http://localhost:81/Team7/indian.php">Indian</a>
