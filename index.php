@@ -366,8 +366,8 @@ if (isset($_POST['submit'])){
               <input id="subject" type="text" name="subject" class="form-control" required>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
-              <label for="details">Details*:</label>
-              <textarea id="details" name="body" class="form-control" rows="4" placeholder="Message." required></textarea>
+              <label for="message">Message*:</label>
+              <textarea id="message" name="body" class="form-control" rows="4" placeholder="Your message here please..." required></textarea>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <button type="submit" class="btn btn btn-yellow btn-outline" >
