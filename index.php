@@ -374,7 +374,7 @@ if (isset($_POST['submit'])){
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <label for="message">Message*:</label>
-              <textarea id="message" name="body" class="form-control" style="width: 600px; rows="4" placeholder="Your message here please..."  required></textarea>
+              <textarea id="message" name="body" class="form-control" style="width: 500px; rows="4" placeholder="Your message here please..."  required></textarea>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <button type="submit" class="btn btn btn-yellow btn-outline" >
