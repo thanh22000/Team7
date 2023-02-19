@@ -384,22 +384,25 @@ if (isset($_POST['submit'])){
               <button type="submit" class="btn btn btn-yellow btn-outline" >
               <input type="submit" value="Submit" name="submit"  style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
     </form>
-    <?php
-if (isset($_POST['submit'])){
-    $Customer_id = $_POST['Customer_id'];
-    $Name = $_POST['Name'];
-    $Email = $_POST['Email'];
-    $Subject = $_POST['Subject'];
-    $Message = $_POST['Message'];
-    $Phone = $_POST['Phone'];
-    include 'db1.php';
-    $sql = "insert into contactus(Customer_id,Name,Email,Subject,Message,Phone)
-    values('$Customer_id','$Name','$Email','$Subject','$Message','$Phone')";
+         <?php
+         if (isset($_POST['submit'])){
+         $Customer_id = $_POST['Customer_id'];
+         $Name = $_POST['Name'];
+         $Email = $_POST['Email'];
+         $Subject = $_POST['Subject'];
+         $Message = $_POST['Message'];
+         $Phone = $_POST['Phone'];
+         include 'db1.php';
+         $sql = "insert into contactus(Customer_id,Name,Email,Subject,Message,Phone)
+         values('$Customer_id','$Name','$Email','$Subject','$Message','$Phone')";
 
-    if ($conn ->query($sql)===TRUE){
-        echo "Your information is";
-    }
-    ?>
+         if($conn -> query($sql) === true){
+          echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
+        }
+         else {
+          echo "Error : " .$conn->error;
+          }}?>
+      </div>
       <div>
         
         </div>
