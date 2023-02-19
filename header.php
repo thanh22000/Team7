@@ -163,7 +163,7 @@
               <a class="nav-link active" href="#contact">Contact us</a>
             </li>
           </ul>
-            <a class="shoppingcart" href="#"> <i class="fa-solid fa-cart-shopping"></i> </a>
+            <a class="shoppingcart" href="#mycart"> <i class="fa-solid fa-cart-shopping"></i> </a>
         </div>
       </div>
       </nav>

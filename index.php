@@ -199,6 +199,7 @@ if (isset($_POST['submit'])){
 
 <!-- Menu -->
 <h2 style="text-align: center">WHAT DO WE SERVE?</h2>
+
 <!-- Srilankan menu -->
 <h3 id="srilankan" style="text-align:center; color:aliceblue;">SRILANKAN MENU</h3><br>
 
@@ -345,7 +346,11 @@ if (isset($_POST['submit'])){
                 </div>
             </div>
 <br><br>
+<!-- My cart -->
+<h2 id="mycart" style="text-align:center; color:aliceblue;">SHOPPING CART</h2><br>
 
+
+<br><br>
 <!-- Contact us -->
 <h2 id="contact" style="text-align:center; color:aliceblue;">CONTACT US</h2><br>
 
