@@ -361,30 +361,46 @@ if (isset($_POST['submit'])){
     </div>
     <div class="col-md-6" style="color: aliceblue;"> 
 
-    <div class="form-group mb-4" style="color: aliceblue;>
-              <label for="name">Your name*:</label>
-              <input id="name" type="text" name="name" class="form-control" placeholder="Example: Dhanushke Perera" style="width: 500px" required></input>
+    
+    <form action=" " method="">
+              
+             Customer_id*:
+              <input type="int" name="Customer_id" placeholder="Customer_id" style="width: 500px" required  >
             </div>
-            <div class="form-group my-4" style="color: aliceblue;>
-              <label for="Email">E-mail address*:</label>
-              <input id="Email" type="email" name="email" class="form-control" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required>
+             Your name*:<input type="text" name="Name" placeholder="Name" style="width: 500px" required>
+             </div>
+             E-mail address*:<input type="text" name="Email" placeholder="Email" style="width: 500px"required>
             </div>
-            <div class="form-group my-4" style="color: aliceblue;>
-              <label for="subject">Subject:</label>
-              <input id="subject" type="text" name="subject" class="form-control" style="width: 500px" required>
+              
+              Subject*:<input type="text" name="Subject" placeholder="Subject"  style="width: 500px" required>
             </div>
-            <div class="form-group my-4" style="color: aliceblue;>
-              <label for="subject">Phone Number*:</label>
-              <input id="subject" type="text" name="subject" class="form-control" style="width: 500px" required>
+              Message*:<input type="text" name="Message" placeholder="Message" style="width: 500px" required> 
             </div>
-            <div class="form-group my-4" style="color: aliceblue;>
-              <label for="message">Message*:</label>
-              <textarea id="message" name="body" class="form-control" style="width: 500px" rows="4" placeholder="Your message here please..."  required></textarea>
+              Phone Number*:
+              <input type="text" name="Phone" placeholder="Phone"  style="width: 500px" required>
             </div>
-            <div class="form-group my-4" style="color: aliceblue;>
+            
+              
               <button type="submit" class="btn btn btn-yellow btn-outline" >
-              <input type="submit" value="Submit" style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
-            <div>
+              <input type="submit" value="Submit" name="submit"  style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
+    </form>
+    <?php
+if (isset($_POST['submit'])){
+    $Customer_id = $_POST['Customer_id'];
+    $Name = $_POST['Name'];
+    $Email = $_POST['Email'];
+    $Subject = $_POST['Subject'];
+    $Message = $_POST['Message'];
+    $Phone = $_POST['Phone'];
+    include 'db1.php';
+    $sql = "insert into contactus(Customer_id,Name,Email,Subject,Message,Phone)
+    values('$Customer_id','$Name','$Email','$Subject','$Message','$Phone')";
+
+    if ($conn ->query($sql)===TRUE){
+        echo "Your information is";
+    }
+    ?>
+      <div>
         
         </div>
     </div>
