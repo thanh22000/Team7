@@ -349,33 +349,40 @@ if (isset($_POST['submit'])){
 <!-- Contact us -->
 <h2 id="contact" style="text-align:center; color:aliceblue;">CONTACT US</h2><br>
 
+
+<div class="row">
+    <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger;">
+              <img class="img-fluid" img src="Images/contactus.jpg" alt="Contact Us">
+    </div>
+    <div class="col-md-6" style="color: aliceblue;"> 
+
     <div class="form-group mb-4" style="color: aliceblue;>
               <label for="name">Your name*:</label>
-              <input id="name" type="text" name="name" class="form-control" placeholder="Example: Dhanushke Perera" required></input>
+              <input id="name" type="text" name="name" class="form-control" placeholder="Example: Dhanushke Perera" style="width: 600px; required></input>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <label for="Email">E-mail address*:</label>
-              <input id="Email" type="email" name="email" class="form-control" placeholder="Example: xxxxxxxa@xxxxx.xxx" required>
+              <input id="Email" type="email" name="email" class="form-control" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 600px; required>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <label for="subject">Subject:</label>
-              <input id="subject" type="text" name="subject" class="form-control" required>
+              <input id="subject" type="text" name="subject" class="form-control" style="width: 600px; required>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <label for="subject">Phone Number*:</label>
-              <input id="subject" type="text" name="subject" class="form-control" required>
+              <input id="subject" type="text" name="subject" class="form-control" style="width: 600px; required>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <label for="message">Message*:</label>
-              <textarea id="message" name="body" class="form-control" rows="4" placeholder="Your message here please..." required></textarea>
+              <textarea id="message" name="body" class="form-control" style="width: 600px; rows="4" placeholder="Your message here please..."  required></textarea>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <button type="submit" class="btn btn btn-yellow btn-outline" >
               <input type="submit" value="Submit" style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
             <div>
-          
+        
+        </div>
     </div>
-  </div>
 </div>
         </form>
       </div>
