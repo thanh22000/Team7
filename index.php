@@ -302,21 +302,21 @@ if (isset($_POST['submit'])){
 
     <div class="menu">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/noodles.jpg" alt="noodles" style="height: 250px; width: 350px;">
+            <img src="Images/chinese1_noodles.jpg" alt="noodles" style="height: 250px; width: 350px;">
             <p> Noodles - seafood mixed<br>
                 <br>
                 € 11.50 </p>
             </div>
     
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/friedrice.jpg" alt="friedrice" style="height: 250px; width: 350px;">
+            <img src="Images/chinese2_friedrice.jpg" alt="friedrice" style="height: 250px; width: 350px;">
             <p> Chinese chicken<br>
               fried rice<br>
                 € 12.50 </p>
             </div>
     
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/riceamngosalad.jpg" alt="riceamngosalad" style="height: 250px; width: 350px;">
+            <img src="Images/chinese3_riceamngosalad.jpg" alt="riceamngosalad" style="height: 250px; width: 350px;">
             <p> Salad with beef and mango<br>
                 <br>
                 € 9.50 </p>
@@ -325,21 +325,21 @@ if (isset($_POST['submit'])){
 
         <div class="menu2">
             <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-                <img src="Images/sandwitch.jpg" alt="sandwitch" style="height: 250px; width: 350px;">
+                <img src="Images/chinese4_sandwitch.jpg" alt="sandwitch" style="height: 250px; width: 350px;">
                 <p>Sandwich with scrambled <br>
                     and sambal<br>
                     € 9.50 </p>
                 </div>
         
             <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-                <img src="Images/friedbeef.jpg" alt="friedbeef" style="height: 250px; width: 350px;">
+                <img src="Images/chinese5_friedbeef.jpg" alt="friedbeef" style="height: 250px; width: 350px;">
                 <p> Stir fried beef <br>
                     <br>
                     € 9.50 </p>
                 </div>
         
             <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-                <img src="Images/potatos.jpg" alt="biriyani" style="height: 250px; width: 350px;">
+                <img src="Images/chinese6_potatos.jpg" alt="biriyani" style="height: 250px; width: 350px;">
                 <p> Smashed potatos boiled<br>
                   veg with chicken<br>
                   € 12.00 </p>
