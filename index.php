@@ -355,7 +355,7 @@ if (isset($_POST['submit'])){
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <label for="Email">E-mail address*:</label>
-              <input id="Email" type="email" name="email" class="form-control" placeholder="Example: dhanushke22000@student.hamk.fi" required>
+              <input id="Email" type="email" name="email" class="form-control" placeholder="Example: xxxxxxxa@xxxxx.xxx" required>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <label for="subject">Subject:</label>
