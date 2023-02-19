@@ -17,19 +17,19 @@ include 'header.php'; ?>
         </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="Images/stringhoppers2.jpeg" class="d-block w-100" alt="stringhoppers" style="height: 450px; width: 350px;">
+            <img src="Images/main1_stringhoppers2.jpeg" class="d-block w-100" alt="stringhoppers" style="height: 450px; width: 350px;">
           <div class="carousel-caption d-none d-md-block" style="color: cornsilk; font-weight: bold;">
             <h3>String Hoppers</h3>      
           </div>
         </div>
         <div class="carousel-item">
-            <img src="Images/idly2.jpg" class="d-block w-100" alt="idly" style="height: 450px; width: 350px;" >
+            <img src="Images/main2_idly2.jpg" class="d-block w-100" alt="idly" style="height: 450px; width: 350px;" >
           <div class="carousel-caption d-none d-md-block" style="color:cornsilk; font-weight: bold;">
             <h3>Idly</h3>
           </div>
         </div>
         <div class="carousel-item">
-            <img src="Images/noodles3.jpg" class="d-block w-100" alt="noodles" style="height: 450px; width: 350px;">
+            <img src="Images/main3_noodles3.jpg" class="d-block w-100" alt="noodles" style="height: 450px; width: 350px;">
           <div class="carousel-caption d-none d-md-block" style="color:cornsilk; font-weight: bold;">
             <h3>Noodles</h3>
           </div>
@@ -49,22 +49,22 @@ include 'header.php'; ?>
     
 <div class="cards" style="padding-top: 40px; padding-bottom: 30px;">
   <div class="card">
-    <img src="Images/pittu.jpeg" alt="pittu" style="height: 180px; width: 180px;">
+    <img src="Images/srilankan1_pittu.jpeg" alt="pittu" style="height: 180px; width: 180px;">
   </div>
   <div class="card" >
-    <img src="Images/stringhoppers.jpeg" alt="stringhoppers" style="height: 180px; width: 180px;">
+    <img src="Images/srilankan2_stringhoppers.jpeg" alt="stringhoppers" style="height: 180px; width: 180px;">
   </div>
   <div class="card">
-    <img src="Images/idly.jpeg" alt="idly" style="height: 180px; width: 180px;">
+    <img src="Images/indian4_idly.jpeg" alt="idly" style="height: 180px; width: 180px;">
   </div>
   <div class="card">
-    <img src="Images/dhosa.jpeg" alt="dhosa" style="height: 180px; width: 180px;">
+    <img src="Images/indian2_dhosa.jpeg" alt="dhosa" style="height: 180px; width: 180px;">
   </div>
   <div class="card">
-    <img src="Images/noodles.jpeg" alt="noodles" style="height: 180px; width: 180px;">
+    <img src="Images/chinese1_noodles.jpg" alt="noodles" style="height: 180px; width: 180px;">
   </div>
   <div class="card">
-    <img src="Images/potatos.jpeg" alt="potatos" style="height: 180px; width: 180px;">
+    <img src="Images/chinese6_potatos.jpg" alt="potatos" style="height: 180px; width: 180px;">
   </div>
 </div>
 
@@ -207,21 +207,21 @@ if (isset($_POST['submit'])){
 
     <div class="menu">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/pittu.jpeg" alt="pittu" style="height: 250px; width: 350px;">
+            <img src="Images/srilankan1_pittu.jpeg" alt="pittu" style="height: 250px; width: 350px;">
             <p> Pittu with Katta sambal and<br>
                 Potato Curry<br>
                 € 9.50 </p>
         </div>
     
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/stringhoppers.jpeg" alt="stringhoppers" style="height: 250px; width: 350px;">
+            <img src="Images/srilankan2_stringhoppers.jpeg" alt="stringhoppers" style="height: 250px; width: 350px;">
             <p> String Hoppers with Pol<br>
                 sambal and Dhal Curry<br>
                 € 9.50 </p>
         </div>
     
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/milkrice.jpeg" alt="idly" style="height: 250px; width: 350px;">
+            <img src="Images/srilankan3_milkrice.jpeg" alt="idly" style="height: 250px; width: 350px;">
             <p> Milk rice with Katta<br>
                 sambal <br>
                 € 9.50 </p>
@@ -230,21 +230,21 @@ if (isset($_POST['submit'])){
 
     <div class="menu2">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/roti.jpeg" alt="roti" style="height: 250px; width: 350px;">
+            <img src="Images/srilankan4_roti.jpeg" alt="roti" style="height: 250px; width: 350px;">
             <p>Pol roti with katta<br>
                 Sambal<br>
                 € 9.50 </p>
         </div>
         
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/hoppers.jpeg" alt="hoppers" style="height: 250px; width: 350px;">
+            <img src="Images/srilankan5_hoppers.jpeg" alt="hoppers" style="height: 250px; width: 350px;">
              <p> Hoppers with katta <br>
                  sambal<br>
                  € 9.50 </p>
         </div>
         
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/riceandcurry.jpeg" alt="ricencurry" style="height: 250px; width: 350px;">
+            <img src="Images/srilankan6_riceandcurry.jpeg" alt="ricencurry" style="height: 250px; width: 350px;">
             <p> Sri Lankan Rice<br>
                  and Curry<br>
                 € 12.00 </p>
@@ -255,21 +255,21 @@ if (isset($_POST['submit'])){
 <h3 id="indian" style="text-align:center; color:aliceblue;">INDIAN MENU</h3><br>
     <div class="menu">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/ulunduwada.jpeg" alt="ulunduwada" style="height: 250px; width: 350px;">
+            <img src="Images/indian1_ulunduwada.jpeg" alt="ulunduwada" style="height: 250px; width: 350px;">
             <p> Ulundu wada with<br>
                 sambal<br>
                 € 6.50 </p>
             </div>
     
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/dhosa.jpeg" alt="dhosa" style="height: 250px; width: 350px;">
+            <img src="Images/indian2_dhosa.jpeg" alt="dhosa" style="height: 250px; width: 350px;">
             <p> Dhosa with Dhal curry<br>
                 and sambal<br>
                 € 9.50 </p>
             </div>
     
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/gheerice.jpeg" alt="gheerice" style="height: 250px; width: 350px;">
+            <img src="Images/indian3_gheerice.jpeg" alt="gheerice" style="height: 250px; width: 350px;">
             <p> Gee rice with Chicken<br>
                 kuruma <br>
                 € 12.50 </p>
@@ -278,21 +278,21 @@ if (isset($_POST['submit'])){
 
         <div class="menu2">
             <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-                <img src="Images/idly.jpeg" alt="idly" style="height: 250px; width: 350px;">
+                <img src="Images/indian4_idly.jpeg" alt="idly" style="height: 250px; width: 350px;">
                 <p>Idly with curry <br>
                     and sambal<br>
                     € 9.50 </p>
                 </div>
         
             <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-                <img src="Images/parota.jpg" alt="parota" style="height: 250px; width: 350px;">
+                <img src="Images/indian5_parota.jpg" alt="parota" style="height: 250px; width: 350px;">
                 <p> Parota with <br>
                     sambal<br>
                     € 9.50 </p>
                 </div>
         
             <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-                <img src="Images/biriyani.jpeg" alt="biriyani" style="height: 250px; width: 350px;">
+                <img src="Images/indian6_biriyani.jpeg" alt="biriyani" style="height: 250px; width: 350px;">
                 <p> Chicken biriyani<br>
                     <br>€ 12.50
                     </p>
@@ -304,21 +304,21 @@ if (isset($_POST['submit'])){
 
     <div class="menu">
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/noodles.jpg" alt="noodles" style="height: 250px; width: 350px;">
+            <img src="Images/chinese1_noodles.jpg" alt="noodles" style="height: 250px; width: 350px;">
             <p> Noodles - seafood mixed<br>
                 <br>
                 € 11.50 </p>
             </div>
     
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/friedrice.jpg" alt="friedrice" style="height: 250px; width: 350px;">
+            <img src="Images/chinese2_friedrice.jpg" alt="friedrice" style="height: 250px; width: 350px;">
             <p> Chinese chicken<br>
               fried rice<br>
                 € 12.50 </p>
             </div>
     
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-            <img src="Images/riceamngosalad.jpg" alt="riceamngosalad" style="height: 250px; width: 350px;">
+            <img src="Images/chinese3_riceamngosalad.jpg" alt="riceamngosalad" style="height: 250px; width: 350px;">
             <p> Salad with beef and mango<br>
                 <br>
                 € 9.50 </p>
@@ -327,21 +327,21 @@ if (isset($_POST['submit'])){
 
         <div class="menu2">
             <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-                <img src="Images/sandwitch.jpg" alt="sandwitch" style="height: 250px; width: 350px;">
+                <img src="Images/chinese4_sandwitch.jpg" alt="sandwitch" style="height: 250px; width: 350px;">
                 <p>Sandwich with scrambled <br>
                     and sambal<br>
                     € 9.50 </p>
                 </div>
         
             <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-                <img src="Images/friedbeef.jpg" alt="friedbeef" style="height: 250px; width: 350px;">
+                <img src="Images/chinese5_friedbeef.jpg" alt="friedbeef" style="height: 250px; width: 350px;">
                 <p> Stir fried beef <br>
                     <br>
                     € 9.50 </p>
                 </div>
         
             <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-                <img src="Images/potatos.jpg" alt="biriyani" style="height: 250px; width: 350px;">
+                <img src="Images/chinese6_potatos.jpg" alt="biriyani" style="height: 250px; width: 350px;">
                 <p> Smashed potatos boiled<br>
                   veg with chicken<br>
                   € 12.00 </p>
