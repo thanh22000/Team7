@@ -358,19 +358,19 @@ if (isset($_POST['submit'])){
 
     <div class="form-group mb-4" style="color: aliceblue;>
               <label for="name">Your name*:</label>
-              <input id="name" type="text" name="name" class="form-control" placeholder="Example: Dhanushke Perera" style="width: 600px; required></input>
+              <input id="name" type="text" name="name" class="form-control" placeholder="Example: Dhanushke Perera" style="width: 500px; required></input>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <label for="Email">E-mail address*:</label>
-              <input id="Email" type="email" name="email" class="form-control" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 600px; required>
+              <input id="Email" type="email" name="email" class="form-control" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px; required>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <label for="subject">Subject:</label>
-              <input id="subject" type="text" name="subject" class="form-control" style="width: 600px; required>
+              <input id="subject" type="text" name="subject" class="form-control" style="width: 500px; required>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <label for="subject">Phone Number*:</label>
-              <input id="subject" type="text" name="subject" class="form-control" style="width: 600px; required>
+              <input id="subject" type="text" name="subject" class="form-control" style="width: 500px; required>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
               <label for="message">Message*:</label>
