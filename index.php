@@ -395,3 +395,35 @@ if (isset($_POST['submit'])){
 
 <a class="backtotop" href="#top"> <i class="fa-solid fa-arrow-up"></i></i> </a>
 <?php include 'footer.php'; ?>
+
+
+
+
+
+
+<form action="" method="post">
+    <input type="int" name="Customer_id" placeholder="Customer_id" required><br><br>
+    <input type="text" name="Name" placeholder="Name" required><br><br>
+    <input type="text" name="Email" placeholder="Email" required><br><br>
+    <input type="text" name="Subject" placeholder="Subject" required><br><br>
+    <input type="text" name="Message" placeholder="Message" required><br><br>
+    <input type="text" name="Phone" placeholder="Phone" required><br><br>
+    
+    <input type="submit" value="Submit" name="submit">
+</form>
+
+<?php
+if (isset($_POST['submit'])){
+    $Customer_id = $_POST['Customer_id'];
+    $Name = $_POST['Name'];
+    $Email = $_POST['Email'];
+    $Subject = $_POST['Subject'];
+    $Message = $_POST['Message'];
+    $Phone = $_POST['Phone'];
+    include 'db1.php';
+    $sql = "insert into contactus(Customer_id,Name,Email,Subject,Message,Phone)
+    values('$Customer_id','$Name','$Email','$Subject','$Message','$Phone')";
+
+    if ($conn ->query($sql)===TRUE){
+        echo "Your information is";
+    }
