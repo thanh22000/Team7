@@ -125,6 +125,9 @@
         line-height: 50px;
         color: black;
         font-size: 18px;}
+      .reservation{
+        font-size: 18px ;
+      }
 
     </style>
 </head>

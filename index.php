@@ -127,23 +127,24 @@ include 'header.php'; ?>
 <br><br>
 
 <!-- Reservation --> 
-<h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2>
+<div class="reservation " >
+<h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br><br>
 <form method = "post" action = "">
     <div class =reservation style="padding-left: 200px; padding-right: 200px; color:aliceblue">
       <div class = "row">
         <div class = "col">
-          Name <br> <input type = "text" name="fname" placeholder = "First name"  style="width: 300px;" required> 
+          Name <br> <input type = "text" name="fname" placeholder = "First name"  style="width: 300px; height: 40px;" required> 
         </div>
         <div class = "col">
-                <br> <input type = "text" name="lname" placeholder = "Last name" style="width: 300px;" required> 
+                <br> <input type = "text" name="lname" placeholder = "Last name" style="width: 300px; height: 40px;" required> <br><br>
         </div>
       </div> <br>
       <div class = "row">
         <div class = "col">
-          Email <br>  <input type = "email" name="email" style="width: 300px;;" required> 
+          Email <br>  <input type = "email" name="email" style="width: 300px; height: 40px;" required> 
         </div>
         <div class = "col">
-          Phone Number <br> <input type = "tel" name="phonenum" style="width: 300px;" required> 
+          Phone Number <br> <input type = "tel" name="phonenum" style="width: 300px; height: 40px;" required> <br><br>
         </div>
       </div> <br>
       <div class = "row">
@@ -151,7 +152,7 @@ include 'header.php'; ?>
           Reservation Date <br>  <input type = "date" name="resdate"  required> 
         </div>
         <div class = "col">
-          Time <br> <input type = "time" name="time" min="09:00" max="23:00" step="900" > 
+          Time <br> <input type = "time" name="time" min="09:00" max="23:00" step="900" > <br><br>
         </div>
       </div> <br>
       <div class = "row">
@@ -159,7 +160,7 @@ include 'header.php'; ?>
           Number of guests <br> <input type = "number" name="noguest" required>  
         </div>
         <div class = "col">
-          Where do you like to sit? <br> 
+          Where do you like to sit? <br> <br>
           <select name="liketosit">  
             <option value = "inside"> Inside the restaurant </option>
             <option value = "outside"> Outside the restaurant </option> 
@@ -168,11 +169,12 @@ include 'header.php'; ?>
       </div> <br>
       <div class = "row">
         <div class = "col">
-          Special Notes (If any special arrangements needed) <br> <input type = "text" name="notes" style="width: 750px;" >  <br><br>
+          Special Notes (If any special arrangements needed) <br> <input type = "text" name="notes" style="width: 750px; height: 100px;" >  <br><br><br>
           <input type = "submit" value = "Submit" name = "submit"> 
         </div> 
       </div>
 </form>
+</div>
 <?php
 if (isset($_POST['submit'])){
     $fname = $_POST['fname'];
