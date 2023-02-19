@@ -17,13 +17,13 @@ include 'header.php'; ?>
         </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="Images/stringhoppers2.jpeg" class="d-block w-100" alt="stringhoppers" style="height: 450px; width: 350px;">
+            <img src="Images/main1_stringhoppers2.jpeg" class="d-block w-100" alt="stringhoppers" style="height: 450px; width: 350px;">
           <div class="carousel-caption d-none d-md-block" style="color: cornsilk; font-weight: bold;">
             <h3>String Hoppers</h3>      
           </div>
         </div>
         <div class="carousel-item">
-            <img src="Images/idly2.jpg" class="d-block w-100" alt="idly" style="height: 450px; width: 350px;" >
+            <img src="Images/main2_idly2.jpg" class="d-block w-100" alt="idly" style="height: 450px; width: 350px;" >
           <div class="carousel-caption d-none d-md-block" style="color:cornsilk; font-weight: bold;">
             <h3>Idly</h3>
           </div>
@@ -49,22 +49,22 @@ include 'header.php'; ?>
     
 <div class="cards" style="padding-top: 40px; padding-bottom: 30px;">
   <div class="card">
-    <img src="Images/pittu.jpeg" alt="pittu" style="height: 180px; width: 180px;">
+    <img src="Images/srilankan1_pittu.jpeg" alt="pittu" style="height: 180px; width: 180px;">
   </div>
   <div class="card" >
-    <img src="Images/stringhoppers.jpeg" alt="stringhoppers" style="height: 180px; width: 180px;">
+    <img src="Images/srilankan2_stringhoppers.jpeg" alt="stringhoppers" style="height: 180px; width: 180px;">
   </div>
   <div class="card">
-    <img src="Images/idly.jpeg" alt="idly" style="height: 180px; width: 180px;">
+    <img src="Images/indian4_idly.jpeg" alt="idly" style="height: 180px; width: 180px;">
   </div>
   <div class="card">
-    <img src="Images/dhosa.jpeg" alt="dhosa" style="height: 180px; width: 180px;">
+    <img src="Images/indian2_dhosa.jpeg" alt="dhosa" style="height: 180px; width: 180px;">
   </div>
   <div class="card">
-    <img src="Images/noodles.jpeg" alt="noodles" style="height: 180px; width: 180px;">
+    <img src="Images/chinese1_noodles.jpg" alt="noodles" style="height: 180px; width: 180px;">
   </div>
   <div class="card">
-    <img src="Images/potatos.jpeg" alt="potatos" style="height: 180px; width: 180px;">
+    <img src="Images/chinese6_potatos.jpg" alt="potatos" style="height: 180px; width: 180px;">
   </div>
 </div>
 
