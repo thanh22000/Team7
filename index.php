@@ -29,7 +29,7 @@ include 'header.php'; ?>
           </div>
         </div>
         <div class="carousel-item">
-            <img src="Images/noodles3.jpg" class="d-block w-100" alt="noodles" style="height: 450px; width: 350px;">
+            <img src="Images/main3_noodles3.jpg" class="d-block w-100" alt="noodles" style="height: 450px; width: 350px;">
           <div class="carousel-caption d-none d-md-block" style="color:cornsilk; font-weight: bold;">
             <h3>Noodles</h3>
           </div>
