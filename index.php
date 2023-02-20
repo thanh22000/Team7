@@ -375,6 +375,10 @@ if (isset($_POST['submit'])){
               <input id="name" type="text" name="name" class="form-control" placeholder="Example: First Name / Last Name" style="width: 500px" required></input>
             </div>
             <div class="form-group my-4" style="color: aliceblue;>
+              <label for="subject">Phone Number*:</label>
+              <input id="subject" type="text" name="subject" class="form-control" style="width: 500px" required>
+            </div>
+            <div class="form-group my-4" style="color: aliceblue;>
               <label for="Email">E-mail address*:</label>
               <input id="Email" type="email" name="email" class="form-control" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required>
             </div>
@@ -386,15 +390,7 @@ if (isset($_POST['submit'])){
               <label for="message">Message*:</label>
               <textarea id="message" name="body" class="form-control" style="width: 500px" rows="4" placeholder="Your message here please..."  required></textarea>
             </div>
-            <div class="form-group my-4" style="color: aliceblue;>
-              <label for="subject">Phone Number*:</label>
-              <input id="subject" type="text" name="subject" class="form-control" style="width: 500px" required>
-            </div>
 
-
-
-            
-              
               <button type="submit" class="btn btn btn-yellow btn-outline" >
               <input type="submit" value="Submit" name="submit"  style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
     </form>
