@@ -375,9 +375,11 @@ if (isset($_POST['submit'])){
           <label for="name">Your name*:</label>
           <input id="name" type="text" name="name" class="form-control" placeholder="Example: Dhanushke Perera" style="width: 500px" required></input>
         </div>
-
-             E-mail address*:<input type="text" name="Email" placeholder="Email" style="width: 500px"required>
+        <div class="form-group my-4" style="color: aliceblue;>
+              <label for="Email">E-mail address*:</label>
+              <input id="Email" type="email" name="email" class="form-control" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required>
             </div>
+
               
               Subject*:<input type="text" name="Subject" placeholder="Subject"  style="width: 500px" required>
             </div>
