@@ -369,8 +369,13 @@ if (isset($_POST['submit'])){
              Customer_id*:
               <input type="int" name="Customer_id" placeholder="Customer_id" style="width: 500px" required  >
             </div>
-             Your name*:<input type="text" name="Name" placeholder="Name" style="width: 500px" required>
-             </div>
+            <div class="col-md-6" style="color: aliceblue;"> 
+
+<div class="form-group mb-4" style="color: aliceblue;>
+          <label for="name">Your name*:</label>
+          <input id="name" type="text" name="name" class="form-control" placeholder="Example: Dhanushke Perera" style="width: 500px" required></input>
+        </div>
+
              E-mail address*:<input type="text" name="Email" placeholder="Email" style="width: 500px"required>
             </div>
               
