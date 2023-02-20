@@ -366,16 +366,15 @@ if (isset($_POST['submit'])){
     
     <form action=" " method="">
               
-             Customer_id*:
-              <input type="int" name="Customer_id" placeholder="Customer_id" style="width: 500px" required  >
+            <div class="form-group mb-4" style="color: aliceblue;>
+              <label for="Customer_id">Customer Id*:</label>
+              <input id="name" type="text" name="name" class="form-control" placeholder="Customer_id" style="width: 500px" required></input>
             </div>
-            <div class="col-md-6" style="color: aliceblue;"> 
-
-<div class="form-group mb-4" style="color: aliceblue;>
-          <label for="name">Your name*:</label>
-          <input id="name" type="text" name="name" class="form-control" placeholder="Example: Dhanushke Perera" style="width: 500px" required></input>
-        </div>
-        <div class="form-group my-4" style="color: aliceblue;>
+            <div class="form-group mb-4" style="color: aliceblue;>
+              <label for="name">Your name*:</label>
+              <input id="name" type="text" name="name" class="form-control" placeholder="Example: Dhanushke Perera" style="width: 500px" required></input>
+            </div>
+            <div class="form-group my-4" style="color: aliceblue;>
               <label for="Email">E-mail address*:</label>
               <input id="Email" type="email" name="email" class="form-control" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required>
             </div>
