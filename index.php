@@ -384,9 +384,7 @@ if (isset($_POST['submit'])){
               <input id="subject" type="text" name="subject" class="form-control" style="width: 500px" required>
             </div>
 
-              
-              Subject*:<input type="text" name="Subject" placeholder="Subject"  style="width: 500px" required>
-            </div>
+
               Message*:<input type="text" name="Message" placeholder="Message" style="width: 500px" required> 
             </div>
               Phone Number*:
