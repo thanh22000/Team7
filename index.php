@@ -128,7 +128,7 @@ include 'header.php'; ?>
 
 <!-- Reservation --> 
 <div class="reservation " >
-<h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br><br>
+<h2 id="reservation" style="color: aliceblue">RESERVATION</h2> <br><br>
 <form method = "post" action = "">
     <div class =reservation style="padding-left: 200px; padding-right: 200px; color:aliceblue">
       <div class = "row">
@@ -160,7 +160,7 @@ include 'header.php'; ?>
           Number of guests <br> <input type = "number" name="noguest" required>  
         </div>
         <div class = "col">
-          Where do you like to sit? <br> <br>
+          Where do you like to sit? <br>
           <select name="liketosit">  
             <option value = "inside"> Inside the restaurant </option>
             <option value = "outside"> Outside the restaurant </option> 
@@ -170,7 +170,7 @@ include 'header.php'; ?>
       <div class = "row">
         <div class = "col">
           Special Notes (If any special arrangements needed) <br> <input type = "text" name="notes" style="width: 750px; height: 100px;" >  <br><br><br>
-          <input type = "submit" value = "Submit" name = "submit"> 
+          <input type = "submit" value = "Submit" name = "submit" style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline"> 
         </div> 
       </div>
 </form>
@@ -186,16 +186,17 @@ if (isset($_POST['submit'])){
     $guests = $_POST['noguest'];
     $place = $_POST['liketosit'];
     $notes = $_POST['notes'];
+    $referance = $_POST['referance'];
 
     include('db.php');
-    $sql = "insert into tblreserv (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
+    $sql = "insert into reservation_anuradha (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
     values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
 
     if($conn -> query($sql) === true){
-        echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
+        echo " <p style=\"color:aliceblue\"> Your information is added successfully under referance number $referance .<p>";
     }
     else {
-        echo "Error : " .$conn->error;
+        echo "<p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
     }}?>
     </div><br><br>
 
