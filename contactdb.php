@@ -1,5 +1,5 @@
 <?php 
-$servername="contactdb";
+$servername="db";
 $username="webpro23";
 $password="team7";
 $dbname="webpro23";
