@@ -1,7 +1,7 @@
 <?php 
 $title = "Home Page";
 include 'header.php'; 
-include 'cartdb.php'; ?>
+ ?>
 <!-- Home Page -->
 <div class="row">
   <div class="col-md-6" style="font-size: 65px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue; padding-top: 50px;">  
