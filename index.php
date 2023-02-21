@@ -596,11 +596,11 @@ if($result3 -> num_rows > 0){
          if (isset($_POST['submit'])){
          $Customer_id = $_POST['Customer_id'];
          $Name = $_POST['Name'];
+         $Phone = $_POST['Phone'];
          $Email = $_POST['Email'];
          $Subject = $_POST['Subject'];
          $Message = $_POST['Message'];
-         $Phone = $_POST['Phone'];
-         include 'db1.php';
+         include 'contactdb.php';
          $sql = "insert into contactus(Customer_id,Name,Email,Subject,Message,Phone)
          values('$Customer_id','$Name','$Email','$Subject','$Message','$Phone')";
 
