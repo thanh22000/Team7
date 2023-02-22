@@ -353,7 +353,6 @@ if($result3 -> num_rows > 0){
 
 
 
-
 <!-- Shopping cart -->
 <div id="shopping-cart">
     <h3 style='color:aliceblue'> Shopping Cart </h3>
