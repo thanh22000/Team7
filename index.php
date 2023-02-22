@@ -562,7 +562,7 @@ if($result3 -> num_rows > 0){
     <div class="col-md-6" style="color: aliceblue;"> 
 
     
-    <form action=" " method="">
+    <form action=" " method="post">
               
             <div class="form-group mb-4" style="color: aliceblue;>
               <label for="Customer_id">Customer Id:</label>
@@ -607,9 +607,8 @@ if($result3 -> num_rows > 0){
          if($conn -> query($sql) === true){
           echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
         }
-         else {
-          echo "Error : " .$conn->error;
-          }}?>
+    
+}?>
       </div>
       <div>
         
