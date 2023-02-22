@@ -1,7 +1,7 @@
 <?php 
 $title = "Home Page";
 include 'header.php'; 
- ?>
+include 'cartdb.php'; ?>
 <!-- Home Page -->
 <div class="row">
   <div class="col-md-6" style="font-size: 65px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue; padding-top: 50px;">  
@@ -596,11 +596,11 @@ if($result3 -> num_rows > 0){
          if (isset($_POST['submit'])){
          $Customer_id = $_POST['Customer_id'];
          $Name = $_POST['Name'];
-         $Phone = $_POST['Phone'];
          $Email = $_POST['Email'];
          $Subject = $_POST['Subject'];
          $Message = $_POST['Message'];
-         include 'contactdb.php';
+         $Phone = $_POST['Phone'];
+         include 'db1.php';
          $sql = "insert into contactus(Customer_id,Name,Email,Subject,Message,Phone)
          values('$Customer_id','$Name','$Email','$Subject','$Message','$Phone')";
 
