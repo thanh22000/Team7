@@ -87,7 +87,13 @@ include 'header.php'; ?>
 <!-- About us -->
 <br>
 <h2 id="aboutus" style="text-align: center; color:aliceblue;"> ABOUT US </h2>
+<br>
+<h1 id="aboutus" style="text-align: left; color:aliceblue;"> The Sri Lankan Restaurant </h1> 
+
+
+
 <br><br><br>
+
 
 <!-- Gallery -->
 <h2 id="gallery" style="text-align:center;">GALLERY</h2><br>
