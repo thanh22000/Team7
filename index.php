@@ -88,28 +88,7 @@ include 'cartdb.php'; ?>
 <!-- About us -->
 <br>
 <h2 id="aboutus" style="text-align: center; color:aliceblue;"> ABOUT US </h2>
-<br>
-<h1 id="aboutus" style="text-align: left; color:aliceblue;"> The Sri Lankan Restaurant </h1> 
-<h5 id="aboutus" style="text-align: left; color:aliceblue;">
-From North to South, East to West you will be able to have anything and everything of the Sri Lankan flavors. There are different spices and herbs which are added to the dishes which makes it a perfect delight and toothsome in every BITE.
-</h5> 
-<h5 id="aboutus" style="text-align: left; color:aliceblue;">
-There are different spices like cardamom, turmeric, red chili, green chili, cloves, cinnamon, garam masala, nutmeg, and much more. The best part is that the combination of all these flavors will not override each other. They are in a perfect balance and it will make sure that the end product is delightful & perfect the way any other cuisine is not
-</h5> 
-<h5 id="aboutus" style="text-align: left; color:aliceblue;">
-Authenticity - Our recipes have been passed down through generations and are true to the region they belong to. Our chefs have been specially brought in from Sri Lanka and are experienced in the Sri Lankan food tradition.
-</h5> 
-<h5 id="aboutus" style="text-align: left; color:aliceblue;">
-Passion for Details - We have a zeal for ingredient quality, hygiene and service consistency across all our locations.
-</h5> 
-<h5 id="aboutus" style="text-align: left; color:aliceblue;">
-Customer is our God - At the very core of our commitment lies a spirit of celebrating our guests, understanding their needs and serving them in the most humble way
-</h5> 
-<h5 id="aboutus" style="text-align: left; color:aliceblue;">
-Modern - To show the modern Sri Lankan food which has never been showcased in Finland
-</h5> 
 <br><br><br>
-
 
 <!-- Gallery -->
 <h2 id="gallery" style="text-align:center;">GALLERY</h2><br>
@@ -150,7 +129,7 @@ Modern - To show the modern Sri Lankan food which has never been showcased in Fi
 
 <!-- Reservation --> 
 <div class="reservation " >
-<h2 id="reservation" style="color: aliceblue">RESERVATION</h2> <br><br>
+<h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br><br>
 <form method = "post" action = "">
     <div class =reservation style="padding-left: 200px; padding-right: 200px; color:aliceblue">
       <div class = "row">
@@ -182,7 +161,7 @@ Modern - To show the modern Sri Lankan food which has never been showcased in Fi
           Number of guests <br> <input type = "number" name="noguest" required>  
         </div>
         <div class = "col">
-          Where do you like to sit? <br>
+          Where do you like to sit? <br> <br>
           <select name="liketosit">  
             <option value = "inside"> Inside the restaurant </option>
             <option value = "outside"> Outside the restaurant </option> 
@@ -192,7 +171,7 @@ Modern - To show the modern Sri Lankan food which has never been showcased in Fi
       <div class = "row">
         <div class = "col">
           Special Notes (If any special arrangements needed) <br> <input type = "text" name="notes" style="width: 750px; height: 100px;" >  <br><br><br>
-          <input type = "submit" value = "Submit" name = "submit" style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline"> 
+          <input type = "submit" value = "Submit" name = "submit"> 
         </div> 
       </div>
 </form>
@@ -208,17 +187,16 @@ if (isset($_POST['submit'])){
     $guests = $_POST['noguest'];
     $place = $_POST['liketosit'];
     $notes = $_POST['notes'];
-    $referance = $_POST['referance'];
 
     include('db.php');
-    $sql = "insert into reservation_anuradha (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
+    $sql = "insert into tblreserv (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
     values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
 
     if($conn -> query($sql) === true){
-        echo " <p style=\"color:aliceblue\"> Your information is added successfully under referance number $referance .<p>";
+        echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
     }
     else {
-        echo "<p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
+        echo "Error : " .$conn->error;
     }}?>
     </div><br><br>
 
@@ -618,19 +596,20 @@ if($result3 -> num_rows > 0){
          if (isset($_POST['submit'])){
          $Customer_id = $_POST['Customer_id'];
          $Name = $_POST['Name'];
+         $Phone = $_POST['Phone'];
          $Email = $_POST['Email'];
          $Subject = $_POST['Subject'];
          $Message = $_POST['Message'];
-         $Phone = $_POST['Phone'];
-         include 'db1.php';
+         include 'contactdb.php';
          $sql = "insert into contactus(Customer_id,Name,Email,Subject,Message,Phone)
          values('$Customer_id','$Name','$Email','$Subject','$Message','$Phone')";
 
          if($conn -> query($sql) === true){
           echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
         }
-    
-}?>
+         else {
+          echo "Error : " .$conn->error;
+          }}?>
       </div>
       <div>
         
