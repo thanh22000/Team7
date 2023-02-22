@@ -1,9 +1,9 @@
 <?php
 
 $servername = "db";
-$username = "project1";
-$password = "Nadee@1212";
-$dbname = "project1";
+$username = "webpro23";
+$password = "team7";
+$dbname = "webpro23";
 
 //creating connection
 

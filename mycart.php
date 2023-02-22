@@ -349,9 +349,36 @@ if($result3 -> num_rows > 0){
     }
 }
 ?>
-            
+<!-- running shopping cart -->
 
 
+
+<!-- Shopping cart -->
+<div id="shopping-cart">
+    <h3 style='color:aliceblue'> Shopping Cart </h3>
+    <a id="btnEmpty" href="mycart.php?action=empty"> Empty Cart </a>
+    <?php
+
+    ?>
+    <table class="tbl-cart" cellpadding="10" cellspacing="1" style='color:aliceblue'>
+    <tbody>
+    <tr>
+        <th style="text-align:left;">Name</th>
+        <th style="text-align:left;">Code</th>
+        <th style="text-align:right;" width="5%">Quantity</th>
+        <th style="text-align:right;" width="10%">Unit Price</th>
+        <th style="text-align:right;" width="10%">Price</th>
+        <th style="text-align:center;" width="5%">Remove</th>
+    </tr>
+    <?php 
+
+    ?>
+    <tr>
+    </tr>
+    </tbody>
+    </table>
+
+</div>
 
 
 
