@@ -97,10 +97,17 @@ From North to South, East to West you will be able to have anything and everythi
 There are different spices like cardamom, turmeric, red chili, green chili, cloves, cinnamon, garam masala, nutmeg, and much more. The best part is that the combination of all these flavors will not override each other. They are in a perfect balance and it will make sure that the end product is delightful & perfect the way any other cuisine is not
 </h5> 
 <h5 id="aboutus" style="text-align: left; color:aliceblue;">
-Authenticity – Our recipes have been passed down through generations and are true to the region they belong to. Our chefs have been specially brought in from Sri Lanka and are experienced in the Sri Lankan food tradition.
+Authenticity - Our recipes have been passed down through generations and are true to the region they belong to. Our chefs have been specially brought in from Sri Lanka and are experienced in the Sri Lankan food tradition.
 </h5> 
-
-
+<h5 id="aboutus" style="text-align: left; color:aliceblue;">
+Passion for Details - We have a zeal for ingredient quality, hygiene and service consistency across all our locations.
+</h5> 
+<h5 id="aboutus" style="text-align: left; color:aliceblue;">
+Customer is our God - At the very core of our commitment lies a spirit of celebrating our guests, understanding their needs and serving them in the most humble way
+</h5> 
+<h5 id="aboutus" style="text-align: left; color:aliceblue;">
+Modern - To show the modern Sri Lankan food which has never been showcased in Finland
+</h5> 
 <br><br><br>
 
 
