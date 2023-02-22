@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -129,6 +132,21 @@
         font-size: 18px ;
       }
 
+      /*fixing the nav bar css */
+      nav.sticky{
+        position: fixed;
+        top : 0;
+        left: 0;
+        padding: 10px 8%;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+      nav.sticky ul{
+        width : auto;
+      }
+
     </style>
 </head>
 <body>     
@@ -141,10 +159,10 @@
     <div class="col-md-10"> 
       <h1 id="top" style="color:black;">We bring the taste of Srilankan foods to Suomi </h1>
     </div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar1">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id ="menu">
             <li class="nav-item">
               <a class="nav-link active" href="http://localhost:81/Team7/index.php">Home</a>
             </li>
@@ -172,6 +190,19 @@
       </nav>
     
   </div>
+  <!-- FIXING THE NAV BAR CODING --> 
+  <script>
+    var navbar1 = document.getElementById("navbar1");
+    var menu = document.getElementById("menu");
+    window.onscroll = function(){
+        if (window.pageYOffset >= menu.offsetTop){
+            navbar1.classList.add("sticky");
+            }
+        else{
+            navbar1.classList.remove("sticky");
+        }
+    }
+  </script>
   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
