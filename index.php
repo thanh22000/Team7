@@ -88,6 +88,19 @@ include 'cartdb.php'; ?>
 <!-- About us -->
 <br>
 <h2 id="aboutus" style="text-align: center; color:aliceblue;"> ABOUT US </h2>
+<h3 id="aboutus" style="text-align: left; color:aliceblue;"> The Sri Lankan Restaurant </h3><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> From North to South, East to West you will be able to have anything and everything of the Sri Lankan flavors. There are different spices and herbs which are added to the dishes which makes it a perfect delight and toothsome in every BITE. 
+</h6><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> There are different spices like cardamom, turmeric, red chili, green chili, cloves, cinnamon, garam masala, nutmeg, and much more. The best part is that the combination of all these flavors will not override each other. They are in a perfect balance and it will make sure that the end product is delightful & perfect the way any other cuisine is not. 
+</h6><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> Authenticity - Our recipes have been passed down through generations and are true to the region they belong to. Our chefs have been specially brought in from Sri Lanka and are experienced in the Sri Lankan food tradition. 
+</h6><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> Passion for Details - We have a zeal for ingredient quality, hygiene and service consistency across all our locations. 
+</h6><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> Customer is our God - At the very core of our commitment lies a spirit of celebrating our guests, understanding their needs and serving them in the most humble way.  
+</h6><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> Modern - To show the modern Sri Lankan food which has never been showcased in Finland.   
+</h6>
 <br><br><br>
 
 <!-- Gallery -->
