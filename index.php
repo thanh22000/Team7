@@ -1,7 +1,6 @@
 <?php 
 $title = "Home Page";
-include 'header.php'; 
-include 'cartdb.php'; ?>
+include 'header.php';  ?>
 <!-- Home Page -->
 <div class="row">
   <div class="col-md-6" style="font-size: 65px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue; padding-top: 50px;">  
@@ -88,6 +87,19 @@ include 'cartdb.php'; ?>
 <!-- About us -->
 <br>
 <h2 id="aboutus" style="text-align: center; color:aliceblue;"> ABOUT US </h2>
+<h3 id="aboutus" style="text-align: left; color:aliceblue;"> The Sri Lankan Restaurant </h3><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> From North to South, East to West you will be able to have anything and everything of the Sri Lankan flavors. There are different spices and herbs which are added to the dishes which makes it a perfect delight and toothsome in every BITE. 
+</h6><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> There are different spices like cardamom, turmeric, red chili, green chili, cloves, cinnamon, garam masala, nutmeg, and much more. The best part is that the combination of all these flavors will not override each other. They are in a perfect balance and it will make sure that the end product is delightful & perfect the way any other cuisine is not. 
+</h6><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> Authenticity - Our recipes have been passed down through generations and are true to the region they belong to. Our chefs have been specially brought in from Sri Lanka and are experienced in the Sri Lankan food tradition. 
+</h6><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> Passion for Details - We have a zeal for ingredient quality, hygiene and service consistency across all our locations. 
+</h6><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> Customer is our God - At the very core of our commitment lies a spirit of celebrating our guests, understanding their needs and serving them in the most humble way.  
+</h6><br>
+<h6 id="aboutus" style="text-align: left; color:aliceblue;"> Modern - To show the modern Sri Lankan food which has never been showcased in Finland.   
+</h6>
 <br><br><br>
 
 <!-- Gallery -->
@@ -200,27 +212,16 @@ if (isset($_POST['submit'])){
     }}?>
     </div><br><br>
 
-<<!-- Menu -->
-<h2 style="text-align: center">WHAT DO WE SERVE?</h2> <br>
-
-<!-- Srilankan food -->
+    !-- Menu -->
+<h2 style="text-align: center">WHAT DO WE SERVE?</h2>
+<!-- Srilankan menu -->
 <h3 id="srilankan" style="text-align:center; color:aliceblue;">SRILANKAN MENU</h3><br>
-<?php 
-$sql = "Select * from tblfood where fid='1'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='menu'>
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/srilankan1_pittu.jpeg' alt='pittu' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-            <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
-            </div>
+    <div class="menu">
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/srilankan1_pittu.jpeg" alt="pittu" style="height: 250px; width: 350px;">
+            <p> Pittu with Katta sambal and<br>
+                Potato Curry<br>
+                € 9.50 </p>
         </div>
         ";
     }
@@ -277,275 +278,131 @@ if($result3 -> num_rows > 0){
                 <input type='submit' value='Add to Cart' class='btnAddAction' />
             </div>
         </div>
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='5'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/srilankan5_hoppers.jpeg' alt='hoppers' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
-            </div>
-        </div> 
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='6'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/srilankan6_riceandcurry.jpeg' alt='riceandcurry' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
-            </div>
-        </div> </div> <br>
-        ";
-    }
-}
-?>
+    
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/srilankan3_milkrice.jpeg" alt="idly" style="height: 250px; width: 350px;">
+            <p> Milk rice with Katta<br>
+                sambal <br>
+                € 9.50 </p>
+        </div>
+    </div><br>
+    <div class="menu2">
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/srilankan4_roti.jpeg" alt="roti" style="height: 250px; width: 350px;">
+            <p>Pol roti with katta<br>
+                Sambal<br>
+                € 9.50 </p>
+        </div>
+        
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/srilankan5_hoppers.jpeg" alt="hoppers" style="height: 250px; width: 350px;">
+             <p> Hoppers with katta <br>
+                 sambal<br>
+                 € 9.50 </p>
+        </div>
+        
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/srilankan6_riceandcurry.jpeg" alt="ricencurry" style="height: 250px; width: 350px;">
+            <p> Sri Lankan Rice<br>
+                 and Curry<br>
+                € 12.00 </p>
+        </div>
+    </div>
+<br><br>
 <!-- Indian menu -->
 <h3 id="indian" style="text-align:center; color:aliceblue;">INDIAN MENU</h3><br>
-<?php 
-$sql = "Select * from tblfood where fid='7'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='menu'>
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/indian1_ulunduwada.jpeg' alt='ulunduwada' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-            <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
+    <div class="menu">
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/indian1_ulunduwada.jpeg" alt="ulunduwada" style="height: 250px; width: 350px;">
+            <p> Ulundu wada with<br>
+                sambal<br>
+                € 6.50 </p>
             </div>
-        </div>
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='8'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/indian2_dhosa.jpeg' alt='dhosa' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
+    
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/indian2_dhosa.jpeg" alt="dhosa" style="height: 250px; width: 350px;">
+            <p> Dhosa with Dhal curry<br>
+                and sambal<br>
+                € 9.50 </p>
             </div>
-        </div> 
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='9'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/indian3_gheerice.jpeg' alt='gheerice' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
+    
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/indian3_gheerice.jpeg" alt="gheerice" style="height: 250px; width: 350px;">
+            <p> Gee rice with Chicken<br>
+                kuruma <br>
+                € 12.50 </p>
             </div>
-        </div> </div> <br>
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='10'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='menu'>
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/indian4_idly.jpeg' alt='idly' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-            <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
+        </div><br>
+        <div class="menu2">
+            <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+                <img src="Images/indian4_idly.jpeg" alt="idly" style="height: 250px; width: 350px;">
+                <p>Idly with curry <br>
+                    and sambal<br>
+                    € 9.50 </p>
+                </div>
+        
+            <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+                <img src="Images/indian5_parota.jpg" alt="parota" style="height: 250px; width: 350px;">
+                <p> Parota with <br>
+                    sambal<br>
+                    € 9.50 </p>
+                </div>
+        
+            <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+                <img src="Images/indian6_biriyani.jpeg" alt="biriyani" style="height: 250px; width: 350px;">
+                <p> Chicken biriyani<br>
+                    <br>€ 12.50
+                    </p>
+                </div>
             </div>
-        </div>
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='11'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/indian5_parota.jpg' alt='parota' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
-            </div>
-        </div> 
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='12'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/indian6_biriyani.jpeg' alt='biriyani' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
-            </div>
-        </div> </div> <br>
-        ";
-    }
-}
-?>
+<br><br>
 <!-- Chinese menu -->
 <h3 id="chinese" style="text-align:center; color:aliceblue;">CHINESE MENU</h3><br>
-<?php 
-$sql = "Select * from tblfood where fid='13'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='menu'>
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/chinese1_noodles.jpg' alt='noodles' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-            <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
+    <div class="menu">
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/chinese1_noodles.jpg" alt="noodles" style="height: 250px; width: 350px;">
+            <p> Noodles - seafood mixed<br>
+                <br>
+                € 11.50 </p>
             </div>
-        </div>
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='14'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/chinese2_friedrice.jpg' alt='friedrice' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
+    
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/chinese2_friedrice.jpg" alt="friedrice" style="height: 250px; width: 350px;">
+            <p> Chinese chicken<br>
+              fried rice<br>
+                € 12.50 </p>
             </div>
-        </div> 
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='15'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/chinese3_riceamngosalad.jpg' alt='riceamngosalad' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
+    
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/chinese3_riceamngosalad.jpg" alt="riceamngosalad" style="height: 250px; width: 350px;">
+            <p> Salad with beef and mango<br>
+                <br>
+                € 9.50 </p>
             </div>
-        </div> </div> <br>
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='16'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='menu'>
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/chinese4_sandwitch.jpg' alt='sandwitch' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-            <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
+        </div><br>
+        <div class="menu2">
+            <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+                <img src="Images/chinese4_sandwitch.jpg" alt="sandwitch" style="height: 250px; width: 350px;">
+                <p>Sandwich with scrambled <br>
+                    and sambal<br>
+                    € 9.50 </p>
+                </div>
+        
+            <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+                <img src="Images/chinese5_friedbeef.jpg" alt="friedbeef" style="height: 250px; width: 350px;">
+                <p> Stir fried beef <br>
+                    <br>
+                    € 9.50 </p>
+                </div>
+        
+            <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+                <img src="Images/chinese6_potatos.jpg" alt="biriyani" style="height: 250px; width: 350px;">
+                <p> Smashed potatos boiled<br>
+                  veg with chicken<br>
+                  € 12.00 </p>
+                </div>
             </div>
-        </div>
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='17'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/chinese5_friedbeef.jpg' alt='friedbeef' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
-            </div>
-        </div> 
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='18'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/chinese6_potatos.jpg' alt='potatos' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
-            </div>
-        </div> </div> <br>
-        ";
-    }
-}
-?> 
-<br>
+<br><br>
 <!-- My cart -->
 <h2 id="mycart" style="text-align:center; color:aliceblue;">SHOPPING CART</h2><br>
 
