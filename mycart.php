@@ -62,7 +62,9 @@ include 'header.php';
                 method: 'post',
                 data: {foodid:foodid,foodname:foodname,foodprice:foodprice,foodimage:foodimage,foodcode:foodcode},
                 success:function(response){
-                    $("message").html(response);
+                    $("#message").html(response);
+                    window.scrollTo(0, 0);
+                    load_cart_item_number();
                 }       
             });
         });
