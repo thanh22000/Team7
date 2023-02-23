@@ -223,60 +223,12 @@ if (isset($_POST['submit'])){
                 Potato Curry<br>
                 € 9.50 </p>
         </div>
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='2'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/srilankan2_stringhoppers.jpeg' alt='stringhoppers' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
-            </div>
-        </div> 
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='3'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/srilankan3_milkrice.jpeg' alt='milkrice' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-                <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
-            </div>
-        </div> </div> <br>
-        ";
-    }
-}
-$sql = "Select * from tblfood where fid='4'";
-$result3 = $conn->query($sql);
-if($result3 -> num_rows > 0){
-    while($row=$result3 -> fetch_assoc()) {
-        echo "
-        <div class='menu'>
-        <div class='card' style='text-align: center; font-weight: bold; background-color: darkgray; width: 350px;'>
-            <img src='Images/srilankan4_roti.jpeg' alt='roti' style='height: 250px; width: 350px;'>
-            <p> $row[name] <br>
-                $row[fcode] <br>
-                € $row[price] </p>
-            <div class='cart-action'>
-                <input type='text' class='food-quantity' name='quantity' value='1' size='2' />
-                <input type='submit' value='Add to Cart' class='btnAddAction' />
-            </div>
+    
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="Images/srilankan2_stringhoppers.jpeg" alt="stringhoppers" style="height: 250px; width: 350px;">
+            <p> String Hoppers with Pol<br>
+                sambal and Dhal Curry<br>
+                € 9.50 </p>
         </div>
     
         <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
