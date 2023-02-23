@@ -564,48 +564,49 @@ if($result3 -> num_rows > 0){
     
     <form action=" " method="post">
               
-            <div class="form-group mb-4" style="color: aliceblue;>
-              <label for="Customer_id">Customer Id:</label>
-              <input id="name" type="text" name="name" class="form-control" placeholder="Customer_id" style="width: 500px" required></input>
+            <div>
+              Customer Id:<br>
+              <input id="Customer_id" type="number" name="Customer_id"  placeholder="Customer_id" style="width: 500px" required></input>
             </div>
-            <div class="form-group mb-4" style="color: aliceblue;>
-              <label for="name">Your name:</label>
-              <input id="name" type="text" name="name" class="form-control" placeholder="Example: First Name / Last Name" style="width: 500px" required></input>
+            <div>
+            <br>Your name:<br>
+              <input id="Name" type="text" name="Name"  placeholder="Example: First Name / Last Name" style="width: 500px" required></input>
             </div>
-            <div class="form-group my-4" style="color: aliceblue;>
-              <label for="subject">Phone Number:</label>
-              <input id="subject" type="text" name="subject" class="form-control" style="width: 500px" required>
+            <div>
+            <br>Phone Number:<br>
+              <input id="Phone_Number" type="text" name="Phone_Number"  placeholder="Example: 0401234567" style="width: 500px" required>
             </div>
-            <div class="form-group my-4" style="color: aliceblue;>
-              <label for="Email">E-mail address:</label>
-              <input id="Email" type="email" name="email" class="form-control" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required>
+            <div>
+            <br>E-mail address:<br>
+              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required>
             </div>
-            <div class="form-group my-4" style="color: aliceblue;>
-              <label for="subject">Subject:</label>
-              <input id="subject" type="text" name="subject" class="form-control" style="width: 500px" required>
+            <div>
+            <br>Subject:<br>
+              <input id="Subject" type="text" name="Subject" class="form-control" style="width: 500px" required>
             </div>
-            <div class="form-group my-4" style="color: aliceblue;>
-              <label for="message">Message:</label>
-              <textarea id="message" name="body" class="form-control" style="width: 500px" rows="4" placeholder="Your message here please..."  required></textarea>
+            <div>
+            <br>Message:<br>
+              <textarea id="Message" type="text" name="Message" class="form-control" style="width: 500px" rows="4" placeholder="Your message here please..."  required></textarea>
             </div>
-
-              <button type="submit" class="btn btn btn-yellow btn-outline" >
+            <div>
+              <br><button type="submit" class="btn btn btn-yellow btn-outline" >
               <input type="submit" value="Submit" name="submit"  style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
-    </form>
+             </div>
+      </form>
          <?php
          if (isset($_POST['submit'])){
          $Customer_id = $_POST['Customer_id'];
          $Name = $_POST['Name'];
-         $Phone = $_POST['Phone'];
+         $Phone_Number = $_POST['Phone_Number'];
          $Email = $_POST['Email'];
          $Subject = $_POST['Subject'];
          $Message = $_POST['Message'];
          include 'contactdb.php';
-         $sql = "insert into contactus(Customer_id,Name,Email,Subject,Message,Phone)
-         values('$Customer_id','$Name','$Email','$Subject','$Message','$Phone')";
+         $sql = "insert into contactus(Customer_id,Name,Phone_Number,Email,Subject,Message)
+         values('$Customer_id','$Name','$Phone_Number','$Email','$Subject','$Message')";
 
          if($conn -> query($sql) === true){
-          echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
+          echo "<p>Your information is added successfully.<p>";
         }
          else {
           echo "Error : " .$conn->error;
