@@ -208,7 +208,7 @@ if (isset($_POST['submit'])){
         echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
     }
     else {
-        echo "Error : " .$conn->error;
+        
     }}?>
     </div><br><br>
 
