@@ -212,30 +212,10 @@ if (isset($_POST['submit'])){
         echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
     }
     else {
-<<<<<<< HEAD
-        
-=======
 <<<<<<< Updated upstream
         echo "Error : " .$conn->error;
 >>>>>>> c49b642309f4416a86e29f02cae5a0395a0db9df
     }}?>
-=======
-        echo "<p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
-    }}
-    // try to get output data for referance
-    if ($result->num_rows > 0) {
-      
-      while($row = $result->fetch_assoc()) {
-        echo "Your referance number is  : " . $row["referance"]. "<br>";
-      }
-    } else {
-      echo "0 results";
-    }
-    $conn->close();
-    ?>
-
-    
->>>>>>> Stashed changes
     </div><br><br>
 
     !-- Menu -->
@@ -399,7 +379,6 @@ if (isset($_POST['submit'])){
     
     <form action=" " method="post">
               
-<<<<<<< Updated upstream
             <div>
               Customer Id:<br>
               <input id="Customer_id" type="number" name="Customer_id"  placeholder="Customer_id" style="width: 500px" required></input>
@@ -423,31 +402,6 @@ if (isset($_POST['submit'])){
             <div>
             <br>Message:<br>
               <textarea id="Message" type="text" name="Message" class="form-control" style="width: 500px" rows="4" placeholder="Your message here please..."  required></textarea>
-=======
-            <div class="form-group mb-4" style="color: aliceblue;">
-              <label for="Customer_id">Customer Id:</label>
-              <input id="name" type="text" name="name" class="form-control" placeholder="Customer_id" style="width: 500px" required></input>
-            </div>
-            <div class="form-group mb-4" style="color: aliceblue;">
-              <label for="name">Your name:</label>
-              <input id="name" type="text" name="name" class="form-control" placeholder="Example: First Name / Last Name" style="width: 500px" required></input>
-            </div>
-            <div class="form-group my-4" style="color: aliceblue;">
-              <label for="subject">Phone Number:</label>
-              <input id="subject" type="text" name="subject" class="form-control" style="width: 500px" required>
-            </div>
-            <div class="form-group my-4" style="color: aliceblue;">
-              <label for="Email">E-mail address:</label>
-              <input id="Email" type="email" name="email" class="form-control" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required>
-            </div>
-            <div class="form-group my-4" style="color: aliceblue;">
-              <label for="subject">Subject:</label>
-              <input id="subject" type="text" name="subject" class="form-control" style="width: 500px" required>
-            </div>
-            <div class="form-group my-4" style="color: aliceblue;">
-              <label for="message">Message:</label>
-              <textarea id="message" name="body" class="form-control" style="width: 500px" rows="4" placeholder="Your message here please..."  required></textarea>
->>>>>>> Stashed changes
             </div>
             <div>
               <br><button type="submit" class="btn btn btn-yellow btn-outline" >
