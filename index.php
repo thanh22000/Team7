@@ -212,9 +212,9 @@ if (isset($_POST['submit'])){
         echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
     }
     else {
-<<<<<<< Updated upstream
+
         echo "Error : " .$conn->error;
->>>>>>> c49b642309f4416a86e29f02cae5a0395a0db9df
+
     }}?>
     </div><br><br>
 
