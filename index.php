@@ -446,23 +446,27 @@ if (isset($_POST['submit'])){
 
 
 <div class="row">
-    <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger;">
+    <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger; padding-left:60px;">
               <img class="img-fluid" img src="Images/LeaveUsFeedback.jpg" alt="Contact Us">
     </div>
     <div class="col-md-6" style="color: aliceblue;"> 
-    <form action=" " method="post">
+    <form action=" " method="POST" name="feedback" onsubmit="return validateform()">
             <div>
-            <br>Your name:<br>
-              <input id="Name" type="text" name="Name"  placeholder="Example: First Name / Last Name" style="width: 500px" required></input>
+            Your name:<br>
+              <input id="Name" type="text" name="Name"  placeholder="Example: First Name / Last Name" style="width: 500px" ></input>
             </div>
             <div>
             <br>E-mail address:<br>
-              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required></input>
+              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px"></input>
             </div>
             <div>
             <br>Feedback:<br>
               <textarea id="Feedback" type="text" name="Feedback" class="form-control" style="width: 500px" rows="4" placeholder="Your feedback..."  required></textarea>
             </div>
+            <div>
+            <!--<br>Feedback Id:<br>
+            <input id="Feedback_id" type="number" name="Feedback_id"  placeholder="Keep it blank. This will be auto generated" style="width: 500px" ></input>
+            </div>-->
             <div>
               <br><button type="submit" class="btn btn btn-yellow btn-outline" >
               <input type="submit" value="Submit" name="submit"  style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
@@ -473,8 +477,9 @@ if (isset($_POST['submit'])){
          $Name = $_POST['Name'];
          $Email = $_POST['Email'];
          $Feedback = $_POST['Feedback'];
+         //$Feedback_id = $_POST['Feedback_id'];
          include 'feedback.php';
-         $sql = "insert into feedback(Name,Email,Feedback)
+         $sql = "INSERT INTO feedback(Name,Email,Feedback)
          values('$Name','$Email','$Feedback')";
 
          if($conn -> query($sql) === true){
@@ -485,6 +490,34 @@ if (isset($_POST['submit'])){
           }}?>
       </div>
       <br><br>
+<script type = "text/javascript">
+  function validateform(){  
+
+//validating name
+let name=document.feedback.Name.value;  
+// to check if name is empty of not  
+if (name==null || name==""){  
+  alert("Name field is required");  
+  return false; 
+}
+
+//validating email
+let email=document.feedback.Email.value;  
+// to check if name is empty of not  
+if (email==null || email==""){  
+  alert("Email field is required");  
+  return false; 
+}
+
+// to ensure feedback cannot be more than 500 characters
+let chkfeedback=document.feedback.Feedback.value;  
+    if(feedback.length>500){  
+        alert("Maximum words 500 only");  
+        return false;
+}
+
+}
+</script>
       
       </main>
 
