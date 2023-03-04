@@ -393,11 +393,11 @@ if (isset($_POST['submit'])){
             </div>
             <div>
             <br>Phone Number:<br>
-              <input id="Phone_Number" type="text" name="Phone_Number"  placeholder="Example: 0401234567" style="width: 500px" ></input>
+              <input id="Phone_Number" type="text" name="Phone_Number"  placeholder="Example: 0401234567" style="width: 500px" required></input>
             </div>
             <div>
             <br>E-mail address:<br>
-              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" ></input>
+              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required></input>
             </div>
             <div>
             <br>Subject:<br>
@@ -490,8 +490,34 @@ if (isset($_POST['submit'])){
           }}?>
       </div>
       <br><br>
+<script type = "text/javascript">
+  function validateform(){  
 
+//validating name
+let name=document.feedback.Name.value;  
+// to check if name is empty of not  
+if (name==null || name==""){  
+  alert("Name field is required");  
+  return false; 
+}
 
+//validating email
+let email=document.feedback.Email.value;  
+// to check if name is empty of not  
+if (email==null || email==""){  
+  alert("Email field is required");  
+  return false; 
+}
+
+// to ensure feedback cannot be more than 500 characters
+let chkfeedback=document.feedback.Feedback.value;  
+    if(feedback.length>500){  
+        alert("Maximum words 500 only");  
+        return false;
+}
+
+}
+</script>
       
       </main>
 
