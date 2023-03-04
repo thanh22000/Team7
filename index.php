@@ -446,17 +446,14 @@ if (isset($_POST['submit'])){
               <img class="img-fluid" img src="Images/LeaveUsFeedback.jpg" alt="Contact Us">
     </div>
     <div class="col-md-6" style="color: aliceblue;"> 
-
-    
     <form action=" " method="post">
-              
             <div>
             <br>Your name:<br>
               <input id="Name" type="text" name="Name"  placeholder="Example: First Name / Last Name" style="width: 500px" required></input>
             </div>
             <div>
-            <br>Phone Number:<br>
-              <input id="Phone_Number" type="text" name="Phone_Number"  placeholder="Example: 0401234567" style="width: 500px" required></input>
+            <br>E-mail address:<br>
+              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required></input>
             </div>
             <div>
             <br>Feedback:<br>
@@ -467,15 +464,14 @@ if (isset($_POST['submit'])){
               <input type="submit" value="Submit" name="submit"  style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
              </div>
       </form>
-
          <?php
          if (isset($_POST['submit'])){
          $Name = $_POST['Name'];
-         $Phone_Number = $_POST['Phone_Number'];
+         $Email = $_POST['Email'];
          $Feedback = $_POST['Feedback'];
          include 'feedback.php';
-         $sql = "insert into feedback(Name,Phone_Number,Feedback)
-         values('$Name','$Phone_Number','$Feedback')";
+         $sql = "insert into feedback(Name,Email,Feedback)
+         values('$Name','$Email','$Feedback')";
 
          if($conn -> query($sql) === true){
           echo "<p>Your information is added successfully.<p>";
@@ -484,10 +480,8 @@ if (isset($_POST['submit'])){
           echo "Error : " .$conn->error;
           }}?>
       </div>
-
       <br><br>
-
-          
+      
       </main>
 
 
