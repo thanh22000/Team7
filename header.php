@@ -9,6 +9,7 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css' />
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
   <style>
+    
     .container{
       width: 1400px;}
     h1{   
@@ -147,6 +148,7 @@
       }
 
     </style>
+    <script src="../layout/site.js"></script>
 </head>
 <body>     
 <!-- OUR PAGE -->   
