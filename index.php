@@ -442,22 +442,22 @@ if (isset($_POST['submit'])){
 
       <br><br>
 <!-- Leave us feedback -->
-<h2 id="contact" style="text-align:center; color:aliceblue;">LEAVE US FEEDBACK</h2><br>
+<h2 id="feedback" style="text-align:center; color:aliceblue;">LEAVE US FEEDBACK</h2><br>
 
 
 <div class="row">
-    <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger; padding-left:60px;">
+    <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger; padding-left:90px;">
               <img class="img-fluid" img src="Images/LeaveUsFeedback.jpg" alt="Contact Us">
     </div>
     <div class="col-md-6" style="color: aliceblue;"> 
     <form action=" " method="POST" name="feedback" onsubmit="return validateform()">
             <div>
             Your name:<br>
-              <input id="Name" type="text" name="Name"  placeholder="Example: First Name / Last Name" style="width: 500px" ></input>
+              <input id="Name" type="text" name="Name"  placeholder="First Name / Last Name" style="width: 500px" ></input>
             </div>
             <div>
             <br>E-mail address:<br>
-              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px"></input>
+              <input id="Email" type="text" name="Email" placeholder="xxxxxxxa@xxxxx.xxx" style="width: 500px"></input>
             </div>
             <div>
             <br>Feedback:<br>

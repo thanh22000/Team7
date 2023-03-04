@@ -166,6 +166,9 @@
               <a class="nav-link active" href="http://localhost:81/Team7/index.php">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link active" href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link active" href='#reservation'>Reservation</a>
             </li>
             <li class="nav-item dropdown">
@@ -181,6 +184,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#contact">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#feedback">Leave us Feedback</a>
             </li>
           </ul>
             <a class="shoppingcart" href="#mycart"> <i class="fa-solid fa-cart-shopping"></i> </a>
