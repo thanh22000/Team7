@@ -381,7 +381,7 @@ if (isset($_POST['submit'])){
     <div class="col-md-6" style="color: aliceblue;"> 
 
     
-    <form action=" " method="post">
+    <form action=" " method="post" onsubmit="return validateform()">
               
             <div>
               Customer Id:<br>
@@ -441,6 +441,7 @@ if (isset($_POST['submit'])){
 
 
       <br><br>
+      
 <!-- Leave us feedback -->
 <h2 id="feedback" style="text-align:center; color:aliceblue;">LEAVE US FEEDBACK</h2><br>
 
