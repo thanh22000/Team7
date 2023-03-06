@@ -230,31 +230,31 @@ if (isset($_POST['submit'])){
     }}?>
     </div><br><br>
 
-    <!-- Menu -->
-    <h2 style="text-align: center" id="menu_food">Menu</h2>
+<!-- Menu -->
+<h2 style="text-align: center" id="menu_food">Menu</h2>
     
-    <div class="menu">
-        <?php  foreach($products as $item) :?>
-            <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
-                <img src="<?= $item['food_image'] ?>" alt="pittu" style="height: 250px; width: 350px;">
-                <p> <?= $item['food_name'] ?><br>
-                    <?= $item['food_code'] ?><br>
-                    € <?= $item['food_price'] ?>
-                    <a href="http://localhost:81/Team7/add-cart.php?id=<?= $item['food_id'] ?>">Add to cart</a>
-                </p>
-            </div>
-        <?php endforeach; ?>
-    </div><br>
+<div class="menu">
+    <?php  foreach($products as $item) :?>
+        <div class="card" style="text-align: center; font-weight: bold; background-color: darkgray;">
+            <img src="<?= $item['food_image'] ?>" alt="pittu" style="height: 250px; width: 350px;">
+            <p> <?= $item['food_name'] ?><br>
+                <?= $item['food_code'] ?><br>
+                € <?= $item['food_price'] ?>
+                <a href="http://localhost:81/Team7/add-cart.php?id=<?= $item['food_id'] ?>">Add to cart</a>
+            </p>
+        </div>
+    <?php endforeach; ?>
+</div><br>
 
 
 
-    <br><br>
-    <!-- Contact us -->
-    <h2 id="contact" style="text-align:center; color:aliceblue;">CONTACT US</h2><br>
+<br><br>
+<!-- Contact us -->
+<h2 id="contact" style="text-align:center; color:aliceblue;">CONTACT US</h2><br>
 
 
-    <div class="row">
-        <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger;">
+ <div class="row">
+    <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger;">
             <img class="img-fluid" img src="Images/contactus.jpg" alt="Contact Us">
         </div>
         <div class="col-md-6" style="color: aliceblue;">
