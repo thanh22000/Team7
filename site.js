@@ -46,7 +46,7 @@ function validateform(){
       alert("Enter 10 digits phone number");
     return false;
     }
-
+    // check the maximum num of guests
     let noguest=(document.form1.noguest.value);
     if(noguest.value>12){
       alert ("Maximum number of guest must be 12.")

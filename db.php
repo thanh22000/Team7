@@ -1,7 +1,7 @@
 <?php
     session_start();
     @ob_start();
-    $servername="web-dev-env-main-db-1";
+    $servername="db";
     $username="webpro23";
     $password="team7";
     $dbname="webpro23";
