@@ -203,7 +203,9 @@
         </form>
     </div>
 <?php
+
 if (isset($_POST['submit'])){
+    include 'db.php';
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $email = $_POST['email'];
@@ -225,7 +227,7 @@ if (isset($_POST['submit'])){
     }
     else {
 
-        echo "Error : " .$conn->error;
+        echo " <p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
 
     }}?>
     </div><br><br>
@@ -299,8 +301,9 @@ if (isset($_POST['submit'])){
                 $Email = $_POST['Email'];
                 $Subject = $_POST['Subject'];
                 $Message = $_POST['Message'];
+                include 'db.php';
                 $sql = "insert into contactus(Customer_id,Name,Phone_Number,Email,Subject,Message)
-         values('$Customer_id','$Name','$Phone_Number','$Email','$Subject','$Message')";
+                values('$Customer_id','$Name','$Phone_Number','$Email','$Subject','$Message')";
 
                 if($conn -> query($sql) === true){
                     echo "<p>Your information is added successfully.<p>";
@@ -357,6 +360,7 @@ if (isset($_POST['submit'])){
                 $Email = $_POST['Email'];
                 $Feedback = $_POST['Feedback'];
                 //$Feedback_id = $_POST['Feedback_id'];
+                include 'db.php';
                 $sql = "INSERT INTO feedback(Name,Email,Feedback)
          values('$Name','$Email','$Feedback')";
 
