@@ -214,7 +214,7 @@ if (isset($_POST['submit'])){
   }
     }
     ?>
-  </div> <br><br>
+    <br><br>
 
     !-- Menu -->
 <h2 style="text-align: center">WHAT DO WE SERVE?</h2>
