@@ -198,6 +198,7 @@
     
   </div>
   <!-- FIXING THE NAV BAR CODING --> 
+  <script src="site.js"></script>
   <script>
     var navbar1 = document.getElementById("navbar1");
     var menu = document.getElementById("menu");

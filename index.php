@@ -214,7 +214,7 @@ if (isset($_POST['submit'])){
   }
     }
     ?>
-  </div> <br><br>
+    <br><br>
 
     !-- Menu -->
 <h2 style="text-align: center">WHAT DO WE SERVE?</h2>
@@ -375,7 +375,7 @@ if (isset($_POST['submit'])){
     <div class="col-md-6" style="color: aliceblue;"> 
 
     
-    <form action=" " method="post" onsubmit="return validateformContact()">
+    <form action=" " method="post" name="form2"onsubmit="return formContact()">
               
             <!-- <div>
              Customer Id:<br>
@@ -383,7 +383,7 @@ if (isset($_POST['submit'])){
             </div>--> 
             <div>
             <br>Your name:<br>
-              <input id="Name" type="text" name="Name"  placeholder="Example: First Name / Last Name" style="width: 500px" required></input>
+              <input id="Name" type="text" name="Name"  placeholder="Example: First Name / Last Name" style="width: 500px"></input>
             </div>
             <div>
             <br>Phone Number:<br>
@@ -391,7 +391,7 @@ if (isset($_POST['submit'])){
             </div>
             <div>
             <br>E-mail address:<br>
-              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required></input>
+              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" ></input>
             </div>
             <div>
             <br>Subject:<br>
@@ -399,7 +399,7 @@ if (isset($_POST['submit'])){
             </div>
             <div>
             <br>Message:<br>
-              <textarea id="Message" type="text" name="Message" class="form-control" style="width: 500px" rows="4" placeholder="Your message here please..."  required></textarea>
+              <textarea id="Message" type="text" name="Message" class="form-control" style="width: 500px" rows="4" placeholder="Your message here please..." ></textarea>
             </div>
             <div>
               <br><button type="submit" class="btn btn btn-yellow btn-outline" >
@@ -484,35 +484,8 @@ if (isset($_POST['submit'])){
           echo "Error : " .$conn->error;
           }}?>
       </div>
-      <br><br>
-<script type = "text/javascript">
-  function validateform(){  
+</div> <br><br>
 
-//validating name
-let name=document.feedback.Name.value;  
-// to check if name is empty of not  
-if (name==null || name==""){  
-  alert("Name field is required");  
-  return false; 
-}
-
-//validating email
-let email=document.feedback.Email.value;  
-// to check if name is empty of not  
-if (email==null || email==""){  
-  alert("Email field is required");  
-  return false; 
-}
-
-// to ensure feedback cannot be more than 500 characters
-let chkfeedback=document.feedback.Feedback.value;  
-    if(feedback.length<300){  
-        alert("Maximum words 500 only");  
-        return false;
-}
-
-}
-</script>
       
       </main>
 
