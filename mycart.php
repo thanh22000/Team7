@@ -83,7 +83,7 @@
                     $_SESSION['sums'] = $sum;
                     ?>
                     <form action="" method="POST">
-                        <button type="submit"> ORDER </button>
+                        <button type="submit" name="order"> ORDER </button>
                     </form>
                 </div>
             </div>
