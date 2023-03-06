@@ -1,6 +1,6 @@
 <?php
     $title = "Home Page";
-    include 'db.php';
+    include_once('db.php');
     include 'header.php';
 
     // Truy vấn
@@ -203,7 +203,9 @@
         </form>
     </div>
 <?php
+
 if (isset($_POST['submit'])){
+    include 'db.php';
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $email = $_POST['email'];
@@ -213,6 +215,7 @@ if (isset($_POST['submit'])){
     $guests = $_POST['noguest'];
     $place = $_POST['liketosit'];
     $notes = $_POST['notes'];
+    include 'reservationdb.php';
     $sql = "insert into reservation_anuradha (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
     values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
 
@@ -225,7 +228,7 @@ if (isset($_POST['submit'])){
     }
     else {
 
-        echo "Error : " .$conn->error;
+        echo " <p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
 
     }}?>
     </div><br><br>
@@ -299,8 +302,9 @@ if (isset($_POST['submit'])){
                 $Email = $_POST['Email'];
                 $Subject = $_POST['Subject'];
                 $Message = $_POST['Message'];
+                include 'contactdb.php';
                 $sql = "insert into contactus(Customer_id,Name,Phone_Number,Email,Subject,Message)
-         values('$Customer_id','$Name','$Phone_Number','$Email','$Subject','$Message')";
+                values('$Customer_id','$Name','$Phone_Number','$Email','$Subject','$Message')";
 
                 if($conn -> query($sql) === true){
                     echo "<p>Your information is added successfully.<p>";
@@ -357,6 +361,7 @@ if (isset($_POST['submit'])){
                 $emailaddress = $_POST['emailaddress'];
                 $Feedback = $_POST['Feedback'];
                 //$Feedback_id = $_POST['Feedback_id'];
+                include 'feedback.php';
                 $sql = "INSERT INTO feedback(fullname,emailaddress,Feedback)
          values('$fullname','$emailaddress','$Feedback')";
 
