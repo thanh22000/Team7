@@ -476,7 +476,7 @@ if (isset($_POST['submit'])){
          values('$fullname','$emailaddress','$Feedback')";
 
          if($conn -> query($sql) === true){
-          echo "<p>Thank you for your feedback.<p>";
+          echo "<h3>Thank you for your feedback.<h3>";
         }
          else {
           echo "Error : " .$conn->error;
