@@ -213,21 +213,8 @@ if (isset($_POST['submit'])){
       echo "<p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
   }
     }
-<<<<<<< HEAD
     ?>
-    <br><br>
-=======
-    else {
-
-        echo "Error : " .$conn->error;
-
-
-
-
-        
-    }}?>
-    </div><br><br>
->>>>>>> 48ac28e229cee6567895e54fd8f7211c3b57cf0f
+  </div> <br><br>
 
     !-- Menu -->
 <h2 style="text-align: center">WHAT DO WE SERVE?</h2>
