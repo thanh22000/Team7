@@ -376,20 +376,20 @@ if (isset($_POST['submit'])){
 
 <div class="row">
     <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger;">
-              <img class="img-fluid" img src="Images/contactus.jpg" alt="Contact Us">
+              <br><img class="img-fluid" img src="Images/contactus.jpg" alt="Contact Us">
     </div>
     <div class="col-md-6" style="color: aliceblue;"> 
 
     
-    <form action=" " method="post" onsubmit="return validateform()">
+    <form action=" " method="post">
               
-            <div>
-              Customer Id:<br>
-              <input id="Customer_id" type="number" name="Customer_id"  placeholder="Customer_id" style="width: 500px" required></input>
-            </div>
+            <!-- <div>
+             Customer Id:<br>
+              <input id="Customer_id" type="number" name="Customer_id"  placeholder="Enter your identity number" style="width: 500px" required></input>
+            </div>--> 
             <div>
             <br>Your name:<br>
-              <input id="Name" type="text" name="Name"  placeholder="Example: First Name / Last Name" style="width: 500px" ></input>
+              <input id="Name" type="text" name="Name"  placeholder="Example: First Name / Last Name" style="width: 500px" required></input>
             </div>
             <div>
             <br>Phone Number:<br>
@@ -414,30 +414,30 @@ if (isset($_POST['submit'])){
       </form>
          <?php
          if (isset($_POST['submit'])){
-         $Customer_id = $_POST['Customer_id'];
+         //$Customer_id = $_POST['Customer_id'];
          $Name = $_POST['Name'];
          $Phone_Number = $_POST['Phone_Number'];
          $Email = $_POST['Email'];
          $Subject = $_POST['Subject'];
          $Message = $_POST['Message'];
          include 'contactdb.php';
-         $sql = "insert into contactus(Customer_id,Name,Phone_Number,Email,Subject,Message)
-         values('$Customer_id','$Name','$Phone_Number','$Email','$Subject','$Message')";
+         $sql = "insert into contactus(Name,Phone_Number,Email,Subject,Message)
+         values('$Name','$Phone_Number','$Email','$Subject','$Message')";
 
          if($conn -> query($sql) === true){
-          echo "<p>Your information is added successfully.<p>";
+          echo "<p style=\"color:aliceblue\">Your information is added successfully. We will contact you soon<p>";
         }
          else {
           echo "Error : " .$conn->error;
           }}?>
       </div>
-      <div>
+      
         
-        </div>
+      
     </div>
 </div>
         </form>
-      </div>
+      
 
 
       <br><br>
