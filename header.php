@@ -11,7 +11,7 @@
   <style>
 
     
-    .container{
+     .container{
       width: 1400px;}
     h1{   
       text-align: center;
