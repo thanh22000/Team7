@@ -424,12 +424,10 @@ if (isset($_POST['submit'])){
          else {
           echo "Error : " .$conn->error;
           }}?>
-      </div>
       
         
       
     </div>
-</div>
         </form>
       
 
