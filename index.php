@@ -201,22 +201,20 @@ if (isset($_POST['submit'])){
     $notes = $_POST['notes'];
 
     include('db.php');
-    $sql = "insert into tblreserv (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
+    $sql = "insert into reservation_anuradha (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
     values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
 
-    //geting data from database quary
-    $sql = "SELECT referance FROM reservation_anuradha";
-    $result = $conn->query($sql);
+    //geting data from database quary   
 
     if($conn -> query($sql) === true){
-        echo " <p style=\"color:aliceblue\">Your information is added successfully.<p>";
+      echo "<p style=\"color:aliceblue\"> Your information is added successfully.<p>";
+  }
+  else {
+      echo "<p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
+  }
     }
-    else {
-
-        echo "Error : " .$conn->error;
-
-    }}?>
-    </div><br><br>
+    ?>
+    <br><br>
 
     !-- Menu -->
 <h2 style="text-align: center">WHAT DO WE SERVE?</h2>
