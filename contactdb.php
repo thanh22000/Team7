@@ -1,8 +1,9 @@
 <?php 
-$servername="db";
+$servername="web-dev-env-main-db-1";
 $username="webpro23";
 $password="team7";
 $dbname="webpro23";
+
 
 //creating the connection
 $conn = new mysqli ($servername, $username, $password, $dbname);
