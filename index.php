@@ -512,7 +512,7 @@ if (email==null || email==""){
 
 // to ensure feedback cannot be more than 500 characters
 let chkfeedback=document.feedback.Feedback.value;  
-    if(feedback.length>500){  
+    if(feedback.length<300){  
         alert("Maximum words 500 only");  
         return false;
 }
