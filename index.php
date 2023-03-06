@@ -326,17 +326,17 @@ if (isset($_POST['submit'])){
 
     <div class="row">
         <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger; padding-left:90px;">
-            <img class="img-fluid" img src="Images/LeaveUsFeedback.jpg" alt="Contact Us">
+            <img class="img-fluid" img src="Images/LeaveUsFeedback.jpg" alt="Leave us feedback">
         </div>
         <div class="col-md-6" style="color: aliceblue;">
             <form action=" " method="POST" name="feedback" onsubmit="return validateform()">
                 <div>
-                    Your name:<br>
-                    <input id="Name" type="text" name="Name"  placeholder="First Name / Last Name" style="width: 500px" ></input>
+                    Full name:<br>
+                    <input id="fullname" type="text" name="fullname"  placeholder="First Name / Last Name" style="width: 500px" ></input>
                 </div>
                 <div>
                     <br>E-mail address:<br>
-                    <input id="Email" type="text" name="Email" placeholder="xxxxxxxa@xxxxx.xxx" style="width: 500px"></input>
+                    <input id="emailaddress" type="text" name="emailaddress" placeholder="xxxxxxxa@xxxxx.xxx" style="width: 500px"></input>
                 </div>
                 <div>
                     <br>Feedback:<br>
@@ -353,15 +353,16 @@ if (isset($_POST['submit'])){
             </form>
             <?php
             if (isset($_POST['submit'])){
-                $Name = $_POST['Name'];
-                $Email = $_POST['Email'];
+                $fullname = $_POST['fullname'];
+                $emailaddress = $_POST['emailaddress'];
                 $Feedback = $_POST['Feedback'];
                 //$Feedback_id = $_POST['Feedback_id'];
-                $sql = "INSERT INTO feedback(Name,Email,Feedback)
-         values('$Name','$Email','$Feedback')";
+                $sql = "INSERT INTO feedback(fullname,emailaddress,Feedback)
+         values('$fullname','$emailaddress','$Feedback')";
 
                 if($conn -> query($sql) === true){
-                    echo "<p>Your information is added successfully.<p>";
+                    echo "<h4>Thank You For Your Valuable Feedback.<h4>";
+                    echo "<p>Have a nice day!<p>";
                 }
                 else {
                     echo "Error : " .$conn->error;
@@ -372,25 +373,25 @@ if (isset($_POST['submit'])){
             function validateform(){
 
 //validating name
-                let name=document.feedback.Name.value;
+                let fullname=document.feedback.fullname.value;
 // to check if name is empty of not
-                if (name==null || name==""){
-                    alert("Name field is required");
+                if (fullname==null || fullname==""){
+                    alert("Full Name field cannot be empty");
                     return false;
                 }
 
 //validating email
-                let email=document.feedback.Email.value;
+                let emailaddress=document.feedback.emailaddress.value;
 // to check if name is empty of not
-                if (email==null || email==""){
-                    alert("Email field is required");
+                if (emailaddress==null || emailaddress==""){
+                    alert("E-mail address field cannot be empty");
                     return false;
                 }
 
 // to ensure feedback cannot be more than 500 characters
                 let chkfeedback=document.feedback.Feedback.value;
-                if(feedback.length>500){
-                    alert("Maximum words 500 only");
+                if(feedback.length<==300){
+                    alert("Maximum words 300 only");
                     return false;
                 }
 
