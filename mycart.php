@@ -1,75 +1,98 @@
-<?php 
-$title = "My cart";
-include 'header.php'; 
+<?php
+    include 'db.php';
+    $title = "My cart";
+    include 'header.php';
+    $sum = 0;
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $data = [
+            'total_price' => $_SESSION['sums'],
+        ];
+
+        // try to insert
+        $id_instart = insert("tbl_orders", $data, $conn);
+
+        if ((isset($_SESSION['cart'])) && count($_SESSION['cart']) > 0) {
+            foreach ($_SESSION['cart'] as $m => $l) {
+                $data2       = [
+                    'order_id' => $id_instart,
+                    'food_id'  => $m,
+                    'price'    => $l['food_price'] * $l['qty'],
+                ];
+                $id_instart2 = insert("tbl_transactions", $data2, $conn);
+
+            }
+
+            unset($_SESSION['cart']);
+            unset($_SESSION['sums']);
+
+            header("location: " . '/');
+            $_SESSION['success'] = ' You are all set ! ';
+        }
+    }
+
+
+    function insert($table, array $data, $conn)
+    {
+        var_dump($data);
+        //code
+        $sql     = "INSERT INTO {$table} ";
+        $columns = implode(',', array_keys($data));
+        $values  = "";
+        $sql     .= '(' . $columns . ')';
+
+        foreach ($data as $field => $value) {
+            $values .= $value . ",";
+        }
+
+        $values = substr($values, 0, -1);
+        $sql    .= " VALUES (" . $values . ')';
+        var_dump($sql);
+        mysqli_query($conn, $sql) or die("ERROR:  query  insert ----" . mysqli_error($conn));
+        return mysqli_insert_id($conn);
+    }
+
 ?>
 <h2 style='color:aliceblue'> My cart </h2> <br>
-<a style='color:aliceblue' href='mycart.php'> Foods </a> <br>
-<a style='color:aliceblue' href='#'> Categories </a> <br>
-<a style='color:aliceblue' href='checkout.php'> Checkout </a> <br>
-<a style='color:aliceblue' href='cart.php'><i class='fas fa-shopping-cart'></i> <span id="cart-item" class="bade badge-danger">1</span></a> <br>
 
 <div class="container">
-    <div id="message"> </div>
+    <div id="message"></div>
     <div class="row mt-2 pb-3">
-        <?php
-            include 'mycartdb.php';
-            $stmt = $conn->prepare("SELECT * FROM tblfood");
-            $stmt->execute();
-            $result3 = $stmt->get_result();
-            while($row=$result3->fetch_assoc()):
-        ?>
-        <div class="col-lg-4">
+        <?php foreach ($_SESSION['cart'] as $key => $item) : ?>
+            <div class="col-lg-4">
+                <div class="card-deck">
+                    <div class="card p-2 border-secondary mb-2">
+                        <img src="<?= $item['food_image'] ?>" class="card-img-top" height="250">
+                        <div class="card-body p-1">
+                            <h4 class="card-title text-center black"><?= $item['food_name'] ?></h4>
+                            <h5 class="card-text text-center black">€ <?= number_format($item['food_price'], 2) ?>
+                                x <?= $item['qty'] ?></h5>
+                            <h5 class="card-text text-center black">Sum
+                                €<?= number_format($item['food_price'] * $item['qty'], 2) ?> </h5>
+                        </div>
+                    </div>
+                </div>
+                <?php $sum += $item['food_price'] * $item['qty'] ?>
+            </div>
+        <?php endforeach; ?>
+        <div class="col-lg-12">
             <div class="card-deck">
-                <div class="card p-2 border-secondary mb-2">    
-                    <img src="<?= $row['food_image'] ?>" class="card-img-top" height="250">
-                    <div class="card-body p-1">
-                        <h4 class="card-title text-center black"><?= $row['food_name'] ?></h4>
-                        <h5 class="card-text text-center black">€ <?= number_format($row['food_price'],2) ?></h5>
-                    </div>
-                    <div class="card-footer p-1 text-center">
-                        <form action="" class="form-submit">
-                            <input type="hidden" class="foodid" value="<? $row['food_id'] ?>">
-                            <input type="hidden" class="foodname" value="<? $row['food_name'] ?>">
-                            <input type="hidden" class="foodprice" value="<? $row['food_price'] ?>">
-                            <input type="hidden" class="foodimage" value="<? $row['food_image'] ?>">
-                            <input type="hidden" class="foodcode" value="<? $row['food_code'] ?>">
-                            <button class="btn btn-info btn-block addItemBtn"><i class="fas fa-cart-plus"></i>&nbsp;&nbsp;Add to cart</button>
-                        </form>
-                    </div>
+                <div class="card p-2 border-secondary mb-2">
+                    <h5>Total € <?= number_format($sum, 2) ?></h5>
+                    <?php
+                    $_SESSION['sums'] = $sum;
+                    ?>
+                    <form action="" method="POST">
+                        <button type="submit"> ORDER </button>
+                    </form>
                 </div>
             </div>
         </div>
-        <?php endwhile; ?>
     </div>
 </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        $(".addItemBtn").click(function(e){
-            e.preventDefault();
-            var $form = $(this).closest(".form-submit");
-            var foodid = $form.find(".foodid").val();
-            var foodname = $form.find(".foodname").val();
-            var foodprice = $form.find(".foodprice").val();
-            var foodimage = $form.find(".foodimage").val();
-            var foodcode = $form.find(".foodcode").val();
-            $.ajax({
-                url: 'myaction.php',
-                method: 'post',
-                data: {foodid:foodid,foodname:foodname,foodprice:foodprice,foodimage:foodimage,foodcode:foodcode},
-                success:function(response){
-                    $("#message").html(response);
-                    window.scrollTo(0, 0);
-                    load_cart_item_number();
-                }       
-            });
-        });
-    });
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <?php include 'footer.php'; ?>
