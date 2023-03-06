@@ -1,6 +1,6 @@
 <?php
     $title = "Home Page";
-    include_once('db.php');
+    include 'db.php';
     include 'header.php';
 
     // Truy vấn
@@ -213,7 +213,7 @@ if (isset($_POST['submit'])){
     $guests = $_POST['noguest'];
     $place = $_POST['liketosit'];
     $notes = $_POST['notes'];
-    $sql = "insert into tblreserv (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
+    $sql = "insert into reservation_anuradha (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
     values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
 
     //geting data from database quary
@@ -226,10 +226,6 @@ if (isset($_POST['submit'])){
     else {
 
         echo "Error : " .$conn->error;
-
-
-
-
 
     }}?>
     </div><br><br>
@@ -303,7 +299,6 @@ if (isset($_POST['submit'])){
                 $Email = $_POST['Email'];
                 $Subject = $_POST['Subject'];
                 $Message = $_POST['Message'];
-                include 'contactdb.php';
                 $sql = "insert into contactus(Customer_id,Name,Phone_Number,Email,Subject,Message)
          values('$Customer_id','$Name','$Phone_Number','$Email','$Subject','$Message')";
 
@@ -362,7 +357,6 @@ if (isset($_POST['submit'])){
                 $Email = $_POST['Email'];
                 $Feedback = $_POST['Feedback'];
                 //$Feedback_id = $_POST['Feedback_id'];
-                include 'feedback.php';
                 $sql = "INSERT INTO feedback(Name,Email,Feedback)
          values('$Name','$Email','$Feedback')";
 
