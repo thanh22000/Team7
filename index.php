@@ -1,6 +1,6 @@
 <?php
     $title = "Home Page";
-    include 'db.php';
+    include_once('db.php');
     include 'header.php';
 
     // Truy vấn
@@ -215,6 +215,7 @@ if (isset($_POST['submit'])){
     $guests = $_POST['noguest'];
     $place = $_POST['liketosit'];
     $notes = $_POST['notes'];
+    include 'reservationdb.php';
     $sql = "insert into reservation_anuradha (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
     values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
 
@@ -301,7 +302,7 @@ if (isset($_POST['submit'])){
                 $Email = $_POST['Email'];
                 $Subject = $_POST['Subject'];
                 $Message = $_POST['Message'];
-                include 'db.php';
+                include 'contactdb.php';
                 $sql = "insert into contactus(Customer_id,Name,Phone_Number,Email,Subject,Message)
                 values('$Customer_id','$Name','$Phone_Number','$Email','$Subject','$Message')";
 
@@ -360,7 +361,7 @@ if (isset($_POST['submit'])){
                 $Email = $_POST['Email'];
                 $Feedback = $_POST['Feedback'];
                 //$Feedback_id = $_POST['Feedback_id'];
-                include 'db.php';
+                include 'feedback.php';
                 $sql = "INSERT INTO feedback(Name,Email,Feedback)
          values('$Name','$Email','$Feedback')";
 
