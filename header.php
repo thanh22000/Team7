@@ -9,8 +9,9 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css' />
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
   <style>
+
     
-    .container{
+  .container{
       width: 1400px;}
     h1{   
       text-align: center;
@@ -198,6 +199,7 @@
     
   </div>
   <!-- FIXING THE NAV BAR CODING --> 
+  <script src="site.js"></script>
   <script>
     var navbar1 = document.getElementById("navbar1");
     var menu = document.getElementById("menu");
