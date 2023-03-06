@@ -9,6 +9,7 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css' />
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
   <style>
+    
     .container{
       width: 1400px;}
     h1{   
@@ -147,6 +148,7 @@
       }
 
     </style>
+    <script src="../layout/site.js"></script>
 </head>
 <body>     
 <!-- OUR PAGE -->   
@@ -166,6 +168,9 @@
               <a class="nav-link active" href="http://localhost:81/Team7/index.php">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link active" href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link active" href='#reservation'>Reservation</a>
             </li>
             <li class="nav-item dropdown">
@@ -181,6 +186,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#contact">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#feedback">Leave us Feedback</a>
             </li>
           </ul>
             <a class="shoppingcart" href="#mycart"> <i class="fa-solid fa-cart-shopping"></i> </a>

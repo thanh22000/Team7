@@ -213,8 +213,21 @@ if (isset($_POST['submit'])){
       echo "<p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
   }
     }
+<<<<<<< HEAD
     ?>
     <br><br>
+=======
+    else {
+
+        echo "Error : " .$conn->error;
+
+
+
+
+        
+    }}?>
+    </div><br><br>
+>>>>>>> 48ac28e229cee6567895e54fd8f7211c3b57cf0f
 
     !-- Menu -->
 <h2 style="text-align: center">WHAT DO WE SERVE?</h2>
@@ -370,32 +383,32 @@ if (isset($_POST['submit'])){
 
 <div class="row">
     <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger;">
-              <img class="img-fluid" img src="Images/contactus.jpg" alt="Contact Us">
+              <br><img class="img-fluid" img src="Images/contactus.jpg" alt="Contact Us">
     </div>
     <div class="col-md-6" style="color: aliceblue;"> 
 
     
-    <form action=" " method="post">
+    <form action=" " method="post" onsubmit="return validateformContact()">
               
-            <div>
-              Customer Id:<br>
-              <input id="Customer_id" type="number" name="Customer_id"  placeholder="Customer_id" style="width: 500px" required></input>
-            </div>
+            <!-- <div>
+             Customer Id:<br>
+              <input id="Customer_id" type="number" name="Customer_id"  placeholder="Enter your identity number" style="width: 500px" required></input>
+            </div>--> 
             <div>
             <br>Your name:<br>
               <input id="Name" type="text" name="Name"  placeholder="Example: First Name / Last Name" style="width: 500px" required></input>
             </div>
             <div>
             <br>Phone Number:<br>
-              <input id="Phone_Number" type="text" name="Phone_Number"  placeholder="Example: 0401234567" style="width: 500px" required>
+              <input id="Phone_Number" type="text" name="Phone_Number"  placeholder="Example: 0401234567" style="width: 500px" required></input>
             </div>
             <div>
             <br>E-mail address:<br>
-              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required>
+              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required></input>
             </div>
             <div>
             <br>Subject:<br>
-              <input id="Subject" type="text" name="Subject" class="form-control" style="width: 500px" required>
+              <input id="Subject" type="text" name="Subject" class="form-control" style="width: 500px" required></input>
             </div>
             <div>
             <br>Message:<br>
@@ -408,15 +421,74 @@ if (isset($_POST['submit'])){
       </form>
          <?php
          if (isset($_POST['submit'])){
-         $Customer_id = $_POST['Customer_id'];
+         //$Customer_id = $_POST['Customer_id'];
          $Name = $_POST['Name'];
          $Phone_Number = $_POST['Phone_Number'];
          $Email = $_POST['Email'];
          $Subject = $_POST['Subject'];
          $Message = $_POST['Message'];
          include 'contactdb.php';
-         $sql = "insert into contactus(Customer_id,Name,Phone_Number,Email,Subject,Message)
-         values('$Customer_id','$Name','$Phone_Number','$Email','$Subject','$Message')";
+         $sql = "insert into contactus(Name,Phone_Number,Email,Subject,Message)
+         values('$Name','$Phone_Number','$Email','$Subject','$Message')";
+
+         if($conn -> query($sql) === true){
+          echo "<p style=\"color:aliceblue\">Your information is added successfully. We will contact you soon<p>";
+        }
+         else {
+          echo "Error : " .$conn->error;
+          }}?>
+      </div>
+      
+        
+      
+    </div>
+</div>
+        </form>
+      
+
+
+      <br><br>
+      
+<!-- Leave us feedback -->
+<h2 id="feedback" style="text-align:center; color:aliceblue;">LEAVE US FEEDBACK</h2><br>
+
+
+<div class="row">
+    <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger; padding-left:90px;">
+              <img class="img-fluid" img src="Images/LeaveUsFeedback.jpg" alt="Contact Us">
+    </div>
+    <div class="col-md-6" style="color: aliceblue;"> 
+    <form action=" " method="POST" name="feedback" onsubmit="return validateform()">
+            <div>
+            Your name:<br>
+              <input id="Name" type="text" name="Name"  placeholder="First Name / Last Name" style="width: 500px" ></input>
+            </div>
+            <div>
+            <br>E-mail address:<br>
+              <input id="Email" type="text" name="Email" placeholder="xxxxxxxa@xxxxx.xxx" style="width: 500px"></input>
+            </div>
+            <div>
+            <br>Feedback:<br>
+              <textarea id="Feedback" type="text" name="Feedback" class="form-control" style="width: 500px" rows="4" placeholder="Your feedback..."  required></textarea>
+            </div>
+            <div>
+            <!--<br>Feedback Id:<br>
+            <input id="Feedback_id" type="number" name="Feedback_id"  placeholder="Keep it blank. This will be auto generated" style="width: 500px" ></input>
+            </div>-->
+            <div>
+              <br><button type="submit" class="btn btn btn-yellow btn-outline" >
+              <input type="submit" value="Submit" name="submit"  style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
+             </div>
+      </form>
+         <?php
+         if (isset($_POST['submit'])){
+         $Name = $_POST['Name'];
+         $Email = $_POST['Email'];
+         $Feedback = $_POST['Feedback'];
+         //$Feedback_id = $_POST['Feedback_id'];
+         include 'feedback.php';
+         $sql = "INSERT INTO feedback(Name,Email,Feedback)
+         values('$Name','$Email','$Feedback')";
 
          if($conn -> query($sql) === true){
           echo "<p>Your information is added successfully.<p>";
@@ -425,16 +497,41 @@ if (isset($_POST['submit'])){
           echo "Error : " .$conn->error;
           }}?>
       </div>
-      <div>
-        
-        </div>
-    </div>
-</div>
-        </form>
-      </div>
+      <br><br>
+<script type = "text/javascript">
+  function validateform(){  
 
-          
+//validating name
+let name=document.feedback.Name.value;  
+// to check if name is empty of not  
+if (name==null || name==""){  
+  alert("Name field is required");  
+  return false; 
+}
+
+//validating email
+let email=document.feedback.Email.value;  
+// to check if name is empty of not  
+if (email==null || email==""){  
+  alert("Email field is required");  
+  return false; 
+}
+
+// to ensure feedback cannot be more than 500 characters
+let chkfeedback=document.feedback.Feedback.value;  
+    if(feedback.length<300){  
+        alert("Maximum words 500 only");  
+        return false;
+}
+
+}
+</script>
+      
       </main>
+
+
+
+
       
         <div id="wrap-footer"></div>
     </div>
