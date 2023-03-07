@@ -145,72 +145,9 @@
     </div><br>
     <br><br>
 
-<<<<<<< HEAD
-    <!-- Reservation -->
-    <div class="reservation " >
-        <h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br><br>
-        <form method = "post" action = "" name = "form1" onsubmit="return checknum()">
-            <div class =reservation style="padding-left: 200px; padding-right: 200px; color:aliceblue">
-                <div class = "row">
-                    <div class = "col">
-                        Name <br> <input type = "text" name="fname" placeholder = "First name"  style="width: 300px; height: 40px;" required span onmouseover="this.style.backgroundColor = 'yellow';" onmouseout="this.style.backgroundColor = 'white';"></span>
-                    </div>
-                    <div class = "col">
-                        <br> <input type = "text" name="lname" placeholder = "Last name" style="width: 300px; height: 40px;" required span onmouseover="this.style.backgroundColor = 'yellow';" onmouseout="this.style.backgroundColor = 'white';"></span> <br><br>
-                    </div>
-                </div> <br>
-                <div class = "row">
-                    <div class = "col">
-                        Email <br>  <input type = "email" name="email" style="width: 300px; height: 40px;" required>
-                    </div>
-                    <div class = "col">
-                        Phone Number <br> <input type = "tel" name="phonenum" style="width: 300px; height: 40px;" required> <br><br>
-                    </div>
-                </div> <br>
-                <div class = "row">
-                    <div class = "col">
-                        Reservation Date <br>  <input type = "date" name="resdate"  required>
-                    </div>
-                    <div class = "col">
-                        Time <br> <input type = "time" name="time" min="09:00" max="23:00" step="900" > <br><br>
-                    </div>
-                </div> <br>
-                <div class = "row">
-                    <div class = "col">
-                        Number of guests <br> <input type = "number" name="noguest" required>
-                    </div>
-                    <div class = "col">
-                        Where do you like to sit? <br> <br>
-                        <select name="liketosit">
-                            <option value = "inside"> Inside the restaurant </option>
-                            <option value = "outside"> Outside the restaurant </option>
-                        </select>
-                    </div>
-                </div> <br>
-                <div class = "row">
-                    <div class = "col">
-                        Special Notes (If any special arrangements needed) <br> <input type = "text" name="notes" style="width: 750px; height: 100px;" >  <br><br><br>
-                        <input type = "submit" value = "Submit" name = "submit" span onmouseover="this.style.backgroundColor = 'yellow';" onmouseout="this.style.backgroundColor = 'white';"></span>
-                    </div>
-                </div>
-        </form>
-    </div>
-<?php
-if (isset($_POST['submit'])){
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $email = $_POST['email'];
-    $phone = $_POST['phonenum'];
-    $date = $_POST['resdate'];
-    $time = $_POST['time'];
-    $guests = $_POST['noguest'];
-    $place = $_POST['liketosit'];
-    $notes = $_POST['notes'];
-    $sql = "insert into reservation_anuradha (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
-    values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
-=======
->>>>>>> 8327f0406187e1a3ce8b026c571ac7dd2ac60caa
 
+
+    
 <!-- Contact us -->
 <h2 id="contact" style="text-align:center; color:aliceblue;">CONTACT US</h2><br>
 
