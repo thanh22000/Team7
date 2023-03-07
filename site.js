@@ -22,7 +22,7 @@ function validateform(){
             alert("Maximum words 500 only");  
             return false;
     }
-    
+
     }
 
     function formContact(){
