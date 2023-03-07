@@ -5,28 +5,29 @@
 ?>
 
 <!-- Reservation -->   
+<br><br>
 <div class="reservation " >
-<h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br><br>
+<h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br>
 <form method = "post" action = "" >
     <div class =reservation style="padding-left: 200px; padding-right: 200px; color:aliceblue">
       <div class = "row">
-        <div class = "col">
+        <div class = "col-md-6">
           First Name <br> <input type = "text" name="fname" placeholder = "First name"  style="width: 300px; height: 40px;" required> 
         </div>
-        <div class = "col">
+        <div class = "col-md-6">
           Last Name <br> <input type = "text" name="lname" placeholder = "Last name" style="width: 300px; height: 40px;" required> <br><br>
         </div>
       </div> <br>
       <div class = "row">
-        <div class = "col">
+        <div class = "col-md-6">
           Email <br>  <input type = "email" name="email" style="width: 300px; height: 40px;" required> 
         </div>
-        <div class = "col">
+        <div class = "col-md-6">
           Phone Number <br> <input type = "tel" name="phonenum" style="width: 300px; height: 40px;" required> <br><br>
         </div>
       </div> <br>
       <div class = "row">
-        <div class = "col">
+        <div class = "col-md-6">
           Reservation Date <br>  <input type = "date" name="resdate"  required> 
         </div>
         <div class = "col">
@@ -34,10 +35,10 @@
         </div>
       </div> <br>
       <div class = "row">
-        <div class = "col">
+        <div class = "col-md-6">
           Number of guests <br> <input type = "number" name="noguest" required>  
         </div>
-        <div class = "col">
+        <div class = "col-md-6">
           Where do you like to sit? <br> <br>
           <select name="liketosit">  
             <option value = "inside"> Inside the restaurant </option>
@@ -46,9 +47,9 @@
         </div>
       </div> <br>
       <div class = "row">
-        <div class = "col">
+        <div class = "col-md-6">
           Special Notes (If any special arrangements needed) <br> <input type = "text" name="notes" style="width: 750px; height: 100px;" >  <br><br><br>
-          <input type = "submit" value = "Submit" name = "submit"> 
+          <input type="submit" value="Submit" name="submit"  style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
         </div> 
       </div>
 </form>

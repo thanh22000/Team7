@@ -86,7 +86,10 @@
     <br><br>
 
         <!-- Reservation -->   
-        <h1 id="Reservation" style="font-size: 65px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Are you Hungry..??  </h1>
+        <h1 id="Reservation" style="font-size: 55px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Are you Hungry..??  </h1>
+    <div style="color: aliceblue; text-align: center; font-size: larger;">
+    <br><img class="img-fluid" img src="Images/Reserved1.png" alt="Reservation">
+    </div>
     <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:400px;"class="link active" href='reservation.php'> Reserve your table here!</a>
     <br><br><br>
 
@@ -220,12 +223,12 @@
 
 <!-- Leave us feedback -->
 <div style="color: aliceblue; text-align: center; font-size: larger;">
-<br><img class="img-fluid" img src="Images/feedback1.jpeg" alt="Contact Us">
+<br><img class="img-fluid" img src="Images/Feedback001.webp" alt="feedback">
 </div>
 <!--<img class="img-fluid" img src="Images/feedback1.jpeg" alt="Leave us feedback"style= padding-left:550px;>-->
 <h2 id="Reservation" style="font-size: 45px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Give Us Your Feedback  </h2>
 <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:450px;"class="link active" href='feedback.php'> Through this feedback form</a>
-<h2 id="Reservation" style="font-size: 35px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Your FEEDBACK makes us better Coz your SPECIAL to us  </h2>
+<h2 id="Reservation" style="font-size: 35px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Your FEEDBACK makes us better Coz you're SPECIAL to us..!  </h2>
 
 <br><br><br>
 
