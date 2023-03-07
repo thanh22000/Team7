@@ -1,9 +1,10 @@
 <?php
-
-$servername = "db";
-$username = "webpro23";
-$password = "team7";
-$dbname = "webpro23";
+session_start();
+@ob_start();
+$servername="web-dev-env-main-db-1";
+$username="webpro23";
+$password="team7";
+$dbname="webpro23";
 
 //creating connection
 
