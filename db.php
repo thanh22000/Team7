@@ -1,6 +1,5 @@
 <?php
-    session_start();
-    @ob_start();
+    
     $servername="db";
     $username="webpro23";
     $password="team7";

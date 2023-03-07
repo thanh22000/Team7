@@ -156,14 +156,14 @@
     <!-- Reservation -->
     <div class="reservation " >
         <h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br><br>
-        <form method = "post" action = "">
+        <form method = "post" action = "" name = "form1" onsubmit="return checknum()">
             <div class =reservation style="padding-left: 200px; padding-right: 200px; color:aliceblue">
                 <div class = "row">
                     <div class = "col">
-                        Name <br> <input type = "text" name="fname" placeholder = "First name"  style="width: 300px; height: 40px;" required>
+                        Name <br> <input type = "text" name="fname" placeholder = "First name"  style="width: 300px; height: 40px;" required span onmouseover="this.style.backgroundColor = 'yellow';" onmouseout="this.style.backgroundColor = 'white';"></span>
                     </div>
                     <div class = "col">
-                        <br> <input type = "text" name="lname" placeholder = "Last name" style="width: 300px; height: 40px;" required> <br><br>
+                        <br> <input type = "text" name="lname" placeholder = "Last name" style="width: 300px; height: 40px;" required span onmouseover="this.style.backgroundColor = 'yellow';" onmouseout="this.style.backgroundColor = 'white';"></span> <br><br>
                     </div>
                 </div> <br>
                 <div class = "row">
@@ -197,7 +197,7 @@
                 <div class = "row">
                     <div class = "col">
                         Special Notes (If any special arrangements needed) <br> <input type = "text" name="notes" style="width: 750px; height: 100px;" >  <br><br><br>
-                        <input type = "submit" value = "Submit" name = "submit">
+                        <input type = "submit" value = "Submit" name = "submit" span onmouseover="this.style.backgroundColor = 'yellow';" onmouseout="this.style.backgroundColor = 'white';"></span>
                     </div>
                 </div>
         </form>
