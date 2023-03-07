@@ -279,7 +279,7 @@ if (isset($_POST['submit'])){
             </div>
             <div>
             <br>E-mail address:<br>
-              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" ></input>
+              <input id="Email" type="text" name="Email" placeholder="Example: xxxxxxxa@xxxxx.xxx" style="width: 500px" required></input>
             </div>
             <div>
             <br>Subject:<br>
@@ -287,7 +287,7 @@ if (isset($_POST['submit'])){
             </div>
             <div>
             <br>Message:<br>
-              <textarea id="Message" type="text" name="Message" class="form-control" style="width: 500px" rows="4" placeholder="Your message here please..." ></textarea>
+              <textarea id="Message" type="text" name="Message" class="form-control" style="width: 500px" rows="4" placeholder="Your message here please..." required></textarea>
             </div>
             <div>
               <br><button type="submit" class="btn btn btn-yellow btn-outline" >
@@ -312,7 +312,10 @@ if (isset($_POST['submit'])){
          else {
           echo "Error : " .$conn->error;
           }}?>
-      
+      </div>
+        </div>
+        </div>
+
         
       
     </div>

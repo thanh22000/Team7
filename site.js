@@ -26,15 +26,16 @@ function validateform(){
 }
 
 
-function formContact(){
-    // to ensure Message cannot be more than 1000 characters
-    let Message=document.form2.Message.value;  
-    if(Message.length<1000){  
-        alert("Maximum words 1000 only");  
-        return false;
-    }
-
+function formContact()
+{
+  let Name=document.form2.Name.value;  
+    // to check if name is empty of not  
+      if (Name==null || Name==""){  
+        alert("Name field is required");  
+      return false; 
+    } 
 }
+   
 
 
     //check the lenghth of the phone number
