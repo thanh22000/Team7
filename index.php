@@ -214,7 +214,7 @@ if (isset($_POST['submit'])){
     $place = $_POST['liketosit'];
     $notes = $_POST['notes'];
 
-    include('db.php');
+    include 'db.php';
     $sql = "insert into reservation_anuradha (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
     values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
 
@@ -292,7 +292,7 @@ if (isset($_POST['submit'])){
             <div>
               <br><button type="submit" class="btn btn btn-yellow btn-outline" >
               <input type="submit" value="Submit" name="submit"  style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
-             </div>
+             </div><br><br>
       </form>
          <?php
          if (isset($_POST['submit'])){
@@ -315,7 +315,7 @@ if (isset($_POST['submit'])){
       
         
       
-    </div>
+    </div><br>
         </form>
       
 
@@ -324,7 +324,7 @@ if (isset($_POST['submit'])){
 
 
     <!-- Leave us feedback -->
-<h2 id="feedback" style="text-align:center; color:aliceblue;">LEAVE US FEEDBACK</h2><br>
+    <h2 id="feedback" style="text-align:center; color:aliceblue;">LEAVE US FEEDBACK</h2><br>
 
 
 <div class="row">
@@ -343,7 +343,7 @@ if (isset($_POST['submit'])){
             </div>
             <div>
             <br>Feedback:<br>
-              <textarea id="Feedback" type="text" name="Feedback" class="form-control" style="width: 500px" rows="4" placeholder="Your feedback..."  required></textarea>
+              <textarea id="Feedback" type="text" name="Feedback" class="form-control" style="width: 500px" rows="4" placeholder="Your feedback...(Maximum words 300 only)"  required></textarea>
             </div>
             <div>
             <!--<br>Feedback Id:<br>
@@ -352,7 +352,7 @@ if (isset($_POST['submit'])){
             <div>
               <br><button type="submit" class="btn btn btn-yellow btn-outline" >
               <input type="submit" value="Submit" name="submit"  style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
-             </div>
+             </div><br><br> 
       </form>
          <?php
          if (isset($_POST['submit'])){
