@@ -5,16 +5,16 @@
 ?>
 
 <!-- Reservation --> 
-<br><div class="reservation " >
+<div class="reservation " >
 <h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br><br>
-<form method = "post" action = "">
+<form method = "post" action = "" >
     <div class =reservation style="padding-left: 200px; padding-right: 200px; color:aliceblue">
       <div class = "row">
         <div class = "col">
-          Name <br> <input type = "text" name="fname" placeholder = "First name"  style="width: 300px; height: 40px;" required> 
+          First Name <br> <input type = "text" name="fname" placeholder = "First name"  style="width: 300px; height: 40px;" required> 
         </div>
         <div class = "col">
-                <br> <input type = "text" name="lname" placeholder = "Last name" style="width: 300px; height: 40px;" required> <br><br>
+          Last Name <br> <input type = "text" name="lname" placeholder = "Last name" style="width: 300px; height: 40px;" required> <br><br>
         </div>
       </div> <br>
       <div class = "row">

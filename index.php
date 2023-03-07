@@ -86,7 +86,7 @@
     <br><br>
 
         <!-- Reservation -->   
-        <h1 id="Reservation" style="font-size: 45px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Are you Hungry..??  </h1>
+        <h1 id="Reservation" style="font-size: 65px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Are you Hungry..??  </h1>
     <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:400px;"class="link active" href='reservation.php'> Reserve your table here!</a>
     <br><br><br>
 
@@ -218,8 +218,8 @@
 
 <!-- Leave us feedback -->
 <h2 id="Reservation" style="font-size: 45px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Give Us Your Feedback  </h2>
-<a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:450px;"class="link active" href='feedback.php'> Through this FEEDBACK form</a>
-
+<a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:450px;"class="link active" href='feedback.php'> Through this feedback form</a>
+<h2 id="Reservation" style="font-size: 35px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Your FEEDBACK makes us better Coz your SPECIAL to us  </h2>
 
 <br><br><br>
 
