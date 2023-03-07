@@ -1,19 +1,6 @@
 <?php
     $title = "Home Page";
-    include_once('db.php');
     include 'header.php';
-
-    // Truy vấn
-    $sql = "SELECT * FROM tblfood ORDER BY food_id DESC";
-    $result = $conn->query($sql);
-    $products = [];
-
-    // Save data to products array
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            $products[] = $row;
-        }
-    }
 ?>
     <!-- Home Page -->
     <div class="row">
@@ -230,6 +217,7 @@ if (isset($_POST['submit'])){
     ?>
     <br><br>
 
+<<<<<<< Updated upstream
 
 <!-- Menu -->
 <h2 style="text-align: center" id="menu_food">Menu</h2>
@@ -249,6 +237,12 @@ if (isset($_POST['submit'])){
 
 
 
+=======
+        echo " <p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
+
+    }}?>
+    </div><br><br>
+>>>>>>> Stashed changes
 <br><br>
 
 

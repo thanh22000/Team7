@@ -175,7 +175,7 @@
                             <a class="nav-link active" href='http://localhost:81/Team7/#reservation'>Reservation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost:81/Team7/#menu_food">Our Menu</a>
+                            <a class="nav-link active" href="http://localhost:81/Team7/menu.php">Our Menu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="http://localhost:81/Team7/#gallery">Gallery</a>
