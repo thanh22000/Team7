@@ -34,3 +34,21 @@ function validateform(){
     }
 
     }
+
+    //check the lenghth of the phone number
+    function checknum(){
+      let phonenum=(document.form1.phonenum.value).trim();
+ if(phonenum.length<10){
+      alert("Enter 10 digits phone number");
+    return false;
+  }
+  else if(phonenum.length>10){
+      alert("Enter 10 digits phone number");
+    return false;
+    }
+    // check the maximum num of guests
+    let noguest=(document.form1.noguest.value);
+    if(noguest.value>12){
+      alert ("Maximum number of guest must be 12.")
+    }
+    }
