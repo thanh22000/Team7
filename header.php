@@ -149,7 +149,7 @@
         }
 
     </style>
-    <script src="../layout/site.js"></script>
+    <script src="site.js"></script>
 </head>
 <body>
 <!-- OUR PAGE -->
@@ -172,10 +172,10 @@
                             <a class="nav-link active" href="http://localhost:81/Team7/#aboutus">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href='http://localhost:81/Team7/#reservation'>Reservation</a>
+                            <a class="nav-link active" href='reservation.php'>Reservation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost:81/Team7/#menu_food">Our Menu</a>
+                            <a class="nav-link active" href="http://localhost:81/Team7/menu.php">Our Menu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="http://localhost:81/Team7/#gallery">Gallery</a>
@@ -184,7 +184,7 @@
                             <a class="nav-link active" href="http://localhost:81/Team7/#contact">Contact us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost:81/Team7/#feedback">Leave us Feedback</a>
+                            <a class="nav-link active" href='feedback.php'>Leave us Feedback</a>
                         </li>
                     </ul>
                     <a class="shoppingcart" href="mycart.php"> <?= isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ?>  <i class="fa-solid fa-cart-shopping"></i> </a>

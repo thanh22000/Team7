@@ -43,5 +43,5 @@
     $_SESSION['cart'][$id]['food_price'] = $gia;
     $_SESSION['cart'][$id]['food_image'] = $hinhanh;
     //var_dump("DIE");die;
-    header("location: http://localhost:81/Team7/#menu_food");
+    header("location: http://localhost:81/Team7/menu.php");
 ?>
