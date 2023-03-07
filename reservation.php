@@ -73,7 +73,7 @@ if (isset($_POST['submit'])){
     //geting data from database quary   
 
     if($conn -> query($sql) === true){
-      echo "<p style=\"color:aliceblue\"> Your information is added successfully.<p>";
+      echo "<h4 style=\"color:aliceblue\" > Your information is added successfully.<h4>";
   }
   else {
       echo "<p style=\"color:aliceblue\"> Error : <p>" .$conn->error;

@@ -90,8 +90,13 @@
     <div style="color: aliceblue; text-align: center; font-size: larger;">
     <br><img class="img-fluid" img src="Images/Reserved1.png" alt="Reservation">
     </div>
-    <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:400px;"class="link active" href='reservation.php'> Reserve your table here!</a>
+    <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:420px;"class="link active" href='reservation.php'> Reserve your table here!</a>
+    <h5 style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:5px;"class="link active" > OR<h5>
+    <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:480px;"class="link active" href='menu.php'> Order Online</a>
     <br><br><br>
+
+
+
 
     <!-- About us -->
     <br>
@@ -206,7 +211,7 @@
          values('$Name','$Phone_Number','$Email','$Subject','$Message')";
 
          if($conn -> query($sql) === true){
-          echo "<p style=\"color:aliceblue\">Your information is added successfully. We will contact you soon<p>";
+          echo "<h4 style=\"color:aliceblue\">Your information is added successfully. We will contact you soon<h4>";
         }
          else {
           echo "Error : " .$conn->error;
