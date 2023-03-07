@@ -217,6 +217,7 @@
       
 
 <!-- Leave us feedback -->
+<img class="img-fluid" img src="Images/feedback1.jpeg" alt="Leave us feedback">
 <h2 id="Reservation" style="font-size: 45px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Give Us Your Feedback  </h2>
 <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:450px;"class="link active" href='feedback.php'> Through this feedback form</a>
 <h2 id="Reservation" style="font-size: 35px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Your FEEDBACK makes us better Coz your SPECIAL to us  </h2>
