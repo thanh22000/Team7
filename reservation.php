@@ -4,7 +4,7 @@
     include 'header.php';
 ?>
 
-<!-- Reservation --> 
+<!-- Reservation -->   
 <div class="reservation " >
 <h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br><br>
 <form method = "post" action = "" >
