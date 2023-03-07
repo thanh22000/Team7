@@ -149,7 +149,7 @@
         }
 
     </style>
-    <script src="../layout/site.js"></script>
+    <script src="site.js"></script>
 </head>
 <body>
 <!-- OUR PAGE -->
