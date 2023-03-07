@@ -302,7 +302,7 @@ if (isset($_POST['submit'])){
          $Email = $_POST['Email'];
          $Subject = $_POST['Subject'];
          $Message = $_POST['Message'];
-         include 'contactdb.php';
+         include 'db.php';
          $sql = "insert into contactus(Name,Phone_Number,Email,Subject,Message)
          values('$Name','$Phone_Number','$Email','$Subject','$Message')";
 
@@ -360,7 +360,7 @@ if (isset($_POST['submit'])){
          $emailaddress = $_POST['emailaddress'];
          $Feedback = $_POST['Feedback'];
          //$Feedback_id = $_POST['Feedback_id'];
-         include 'feedback.php';
+         include 'db.php';
          $sql = "INSERT INTO feedback(fullname,emailaddress,Feedback)
          values('$fullname','$emailaddress','$Feedback')";
 

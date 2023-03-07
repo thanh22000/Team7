@@ -18,7 +18,7 @@ function validateform(){
     
     // to ensure feedback cannot be more than 500 characters
     let chkfeedback=document.feedback.Feedback.value;  
-        if(chkfeedback.length<=300){  
+        if(chkfeedback.length>300){  
             alert("Maximum words 500 only");  
         return false;
     }
