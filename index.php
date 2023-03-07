@@ -85,6 +85,11 @@
     </div>
     <br><br>
 
+        <!-- Reservation -->   
+        <h1 id="Reservation" style="font-size: 45px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Are you Hungry..??  </h1>
+    <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:400px;"class="link active" href='reservation.php'> Reserve your table here!</a>
+    <br><br><br>
+
     <!-- About us -->
     <br>
     <h2 id="aboutus" style="text-align: center; color:aliceblue;"> ABOUT US </h2>
@@ -101,8 +106,8 @@
     </h6><br>
     <h6 id="aboutus" style="text-align: left; color:aliceblue;"> Modern - To show the modern Sri Lankan food which has never been showcased in Finland.
     </h6>
-    <br><br><br>
 
+<br><br><br>
     <!-- Gallery -->
     <h2 id="gallery" style="text-align:center;">GALLERY</h2><br>
     <div class="gallery">
@@ -138,83 +143,6 @@
             <img src="Images/gallery11.jpg" alt="idly" style="height: 550px; width: 400px;">
         </div>
     </div><br>
-    <br><br>
-
-    <!-- Reservation --> 
-<div class="reservation " >
-<h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br><br>
-<form method = "post" action = "">
-    <div class =reservation style="padding-left: 200px; padding-right: 200px; color:aliceblue">
-      <div class = "row">
-        <div class = "col">
-          Name <br> <input type = "text" name="fname" placeholder = "First name"  style="width: 300px; height: 40px;" required> 
-        </div>
-        <div class = "col">
-                <br> <input type = "text" name="lname" placeholder = "Last name" style="width: 300px; height: 40px;" required> <br><br>
-        </div>
-      </div> <br>
-      <div class = "row">
-        <div class = "col">
-          Email <br>  <input type = "email" name="email" style="width: 300px; height: 40px;" required> 
-        </div>
-        <div class = "col">
-          Phone Number <br> <input type = "tel" name="phonenum" style="width: 300px; height: 40px;" required> <br><br>
-        </div>
-      </div> <br>
-      <div class = "row">
-        <div class = "col">
-          Reservation Date <br>  <input type = "date" name="resdate"  required> 
-        </div>
-        <div class = "col">
-          Time <br> <input type = "time" name="time" min="09:00" max="23:00" step="900" > <br><br>
-        </div>
-      </div> <br>
-      <div class = "row">
-        <div class = "col">
-          Number of guests <br> <input type = "number" name="noguest" required>  
-        </div>
-        <div class = "col">
-          Where do you like to sit? <br> <br>
-          <select name="liketosit">  
-            <option value = "inside"> Inside the restaurant </option>
-            <option value = "outside"> Outside the restaurant </option> 
-          </select>
-        </div>
-      </div> <br>
-      <div class = "row">
-        <div class = "col">
-          Special Notes (If any special arrangements needed) <br> <input type = "text" name="notes" style="width: 750px; height: 100px;" >  <br><br><br>
-          <input type = "submit" value = "Submit" name = "submit"> 
-        </div> 
-      </div>
-</form>
-</div>
-<?php
-if (isset($_POST['submit'])){
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $email = $_POST['email'];
-    $phone = $_POST['phonenum'];
-    $date = $_POST['resdate'];
-    $time = $_POST['time'];
-    $guests = $_POST['noguest'];
-    $place = $_POST['liketosit'];
-    $notes = $_POST['notes'];
-
-    include 'db.php';
-    $sql = "insert into reservation_anuradha (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
-    values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
-
-    //geting data from database quary   
-
-    if($conn -> query($sql) === true){
-      echo "<p style=\"color:aliceblue\"> Your information is added successfully.<p>";
-  }
-  else {
-      echo "<p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
-  }
-    }
-    ?>
     <br><br>
 
 
@@ -288,60 +216,14 @@ if (isset($_POST['submit'])){
         </form>
       
 
-
-      <br><br>
-
-
-    <!-- Leave us feedback -->
-    <h2 id="feedback" style="text-align:center; color:aliceblue;">LEAVE US FEEDBACK</h2><br>
+<!-- Leave us feedback -->
+<h2 id="Reservation" style="font-size: 45px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Give Us Your Feedback  </h2>
+<a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:450px;"class="link active" href='feedback.php'> Through this FEEDBACK form</a>
 
 
-<div class="row">
-    <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger; padding-left:90px;">
-              <img class="img-fluid" img src="Images/LeaveUsFeedback.jpg" alt="Contact Us">
-    </div>
-    <div class="col-md-6" style="color: aliceblue;"> 
-    <form action=" " method="POST" name="feedback" onsubmit="return validateform()">
-            <div>
-            Full name:<br>
-              <input id="fullname" type="text" name="fullname"  placeholder="First Name / Last Name" style="width: 500px" ></input>
-            </div>
-            <div>
-            <br>E-mail address:<br>
-              <input id="emailaddress" type="text" name="emailaddress" placeholder="xxxxxxxa@xxxxx.xxx" style="width: 500px"></input>
-            </div>
-            <div>
-            <br>Feedback:<br>
-              <textarea id="Feedback" type="text" name="Feedback" class="form-control" style="width: 500px" rows="4" placeholder="Your feedback...(Maximum words 300 only)"  required></textarea>
-            </div>
-            <div>
-            <!--<br>Feedback Id:<br>
-            <input id="Feedback_id" type="number" name="Feedback_id"  placeholder="Keep it blank. This will be auto generated" style="width: 500px" ></input>
-            </div>-->
-            <div>
-              <br><button type="submit" class="btn btn btn-yellow btn-outline" >
-              <input type="submit" value="Submit" name="submit"  style="color:coral; font-weight: bold; background-color: blanchedalmond;" class="btn btn btn-yellow btn-outline">
-             </div><br><br> 
-      </form>
-         <?php
-         if (isset($_POST['submit'])){
-         $fullname = $_POST['fullname'];
-         $emailaddress = $_POST['emailaddress'];
-         $Feedback = $_POST['Feedback'];
-         //$Feedback_id = $_POST['Feedback_id'];
-         include 'db.php';
-         $sql = "INSERT INTO feedback(fullname,emailaddress,Feedback)
-         values('$fullname','$emailaddress','$Feedback')";
+<br><br><br>
 
-         if($conn -> query($sql) === true){
-          echo "<h4>Thank you for your Valuable feedback.<h4>";
-          echo "<p>Have a nice day!<p>";
-        }
-         else {
-          echo "Error : " .$conn->error;
-          }}?>
-      </div>
-</div> <br><br>
+    
 
 
         </main>
