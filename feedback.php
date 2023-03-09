@@ -56,6 +56,11 @@
           echo "Error : " .$conn->error;
           }}?>
       </div>
+
+      <div class="col-md-6">
+<br>
+<a class="btn btn-danger" href="feedbackreport.php" role="button">All Feedbacks</a>
+</div>
 </div> <br><br>
 
 
