@@ -145,7 +145,6 @@
     </div><br>
     <br><br>
 
-<<<<<<< HEAD
     <!-- Reservation -->
     <div class="reservation " >
         <h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br><br>
@@ -177,7 +176,7 @@
                 </div> <br>
                 <div class = "row">
                     <div class = "col">
-                        Number of guests <br> <input type = "number" name="noguest" required>
+                        Number of Guests <br> <input type = "number" name="noguest" required>
                     </div>
                     <div class = "col">
                         Where do you like to sit? <br> <br>
@@ -190,7 +189,7 @@
                 <div class = "row">
                     <div class = "col">
                         Special Notes (If any special arrangements needed) <br> <input type = "text" name="notes" style="width: 750px; height: 100px;" >  <br><br><br>
-                        <input type = "submit" value = "Submit" name = "submit" span onmouseover="this.style.backgroundColor = 'yellow';" onmouseout="this.style.backgroundColor = 'white';"></span>
+                        <input type = "submit" value = "  Submit  " name = "  submit  " span onmouseover="this.style.backgroundColor = 'yellow';" onmouseout="this.style.backgroundColor = 'white';"></span>
                     </div>
                 </div>
         </form>
@@ -206,10 +205,25 @@ if (isset($_POST['submit'])){
     $guests = $_POST['noguest'];
     $place = $_POST['liketosit'];
     $notes = $_POST['notes'];
+
+    include('db.php');
+
     $sql = "insert into reservation_anuradha (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
     values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
-=======
->>>>>>> 8327f0406187e1a3ce8b026c571ac7dd2ac60caa
+
+    //geting data from database quary   
+
+    if($conn -> query($sql) === true){
+        echo "<p style=\"color:aliceblue\"> Your information is added successfully.<p>";
+    }
+    else {
+        echo "<p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
+    }
+      }
+      ?>
+      <br><br>
+  
+
 
 <!-- Contact us -->
 <h2 id="contact" style="text-align:center; color:aliceblue;">CONTACT US</h2><br>

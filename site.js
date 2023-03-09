@@ -42,16 +42,17 @@ function formContact()
 function checknum(){
       let phonenum=(document.form1.phonenum.value).trim();
  if(phonenum.length<10){
-      alert("Enter 10 digits phone number");
+      alert("Please enter a valid contact number. Shoud be 10 digits");
     return false;
   }
   else if(phonenum.length>10){
-      alert("Enter 10 digits phone number");
+      alert("Please enter a valid contact number. Shoud be 10 digits");
     return false;
     }
     // check the maximum num of guests
     let noguest=(document.form1.noguest.value);
     if(noguest.value>12){
-      alert ("Maximum number of guest must be 12.")
+      alert ("Maximum number of guest allowed is 12 per one reservation.")
+      return false;
     }
 }
