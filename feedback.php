@@ -47,8 +47,10 @@
          values('$fullname','$emailaddress','$Feedback')";
 
          if($conn -> query($sql) === true){
+          echo "<img src=\"Images/thank-you-for-your-feedback-thank-you-for.png\">";
           echo "<h4>Thank you for your Valuable feedback.<h4>";
           echo "<p>Have a nice day!<p>";
+      
         }
          else {
           echo "Error : " .$conn->error;
