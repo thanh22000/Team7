@@ -48,10 +48,5 @@ function checknum(){
       alert("Please enter a valid contact number. Shoud be 10 digits");
     return false;
     }
-    // check the maximum num of guests
-    let noguest=(document.form1.noguest.value);
-    if(noguest.value>12){
-      alert ("Maximum number of guest allowed is 12 per one reservation.")
-      return false;
-    }
+    
 }
