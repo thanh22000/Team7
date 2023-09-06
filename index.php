@@ -86,9 +86,17 @@
     <br><br>
 
         <!-- Reservation -->   
-        <h1 id="Reservation" style="font-size: 65px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Are you Hungry..??  </h1>
-    <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:400px;"class="link active" href='reservation.php'> Reserve your table here!</a>
+        <h1 id="Reservation" style="font-size: 55px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Are you Hungry..??  </h1>
+    <div style="color: aliceblue; text-align: center; font-size: larger;">
+    <br><img class="img-fluid" img src="Images/Reserved1.png" alt="Reservation">
+    </div>
+    <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:420px;"class="link active" href='reservation.php'> Reserve your table here!</a>
+    <h5 style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:5px;"class="link active" > OR<h5>
+    <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:480px;"class="link active" href='menu.php'> Order Online</a>
     <br><br><br>
+
+
+
 
     <!-- About us -->
     <br>
@@ -145,86 +153,9 @@
     </div><br>
     <br><br>
 
-    <!-- Reservation -->
-    <div class="reservation " >
-        <h2 id="reservation" style="text-align: center; color:aliceblue;">RESERVATION</h2> <br><br>
-        <form method = "post" action = "" name = "form1" onsubmit="return checknum()">
-            <div class =reservation style="padding-left: 200px; padding-right: 200px; color:aliceblue">
-                <div class = "row">
-                    <div class = "col">
-                        Name <br> <input type = "text" name="fname" placeholder = "First name"  style="width: 300px; height: 40px;" required span onmouseover="this.style.backgroundColor = 'yellow';" onmouseout="this.style.backgroundColor = 'white';"></span>
-                    </div>
-                    <div class = "col">
-                        <br> <input type = "text" name="lname" placeholder = "Last name" style="width: 300px; height: 40px;" required span onmouseover="this.style.backgroundColor = 'yellow';" onmouseout="this.style.backgroundColor = 'white';"></span> <br><br>
-                    </div>
-                </div> <br>
-                <div class = "row">
-                    <div class = "col">
-                        Email <br>  <input type = "email" name="email" style="width: 300px; height: 40px;" required>
-                    </div>
-                    <div class = "col">
-                        Phone Number <br> <input type = "tel" name="phonenum" style="width: 300px; height: 40px;" required> <br><br>
-                    </div>
-                </div> <br>
-                <div class = "row">
-                    <div class = "col">
-                        Reservation Date <br>  <input type = "date" name="resdate"  required>
-                    </div>
-                    <div class = "col">
-                        Time <br> <input type = "time" name="time" min="09:00" max="23:00" step="900" > <br><br>
-                    </div>
-                </div> <br>
-                <div class = "row">
-                    <div class = "col">
-                        Number of Guests <br> <input type = "number" name="noguest" required>
-                    </div>
-                    <div class = "col">
-                        Where do you like to sit? <br> <br>
-                        <select name="liketosit">
-                            <option value = "inside"> Inside the restaurant </option>
-                            <option value = "outside"> Outside the restaurant </option>
-                        </select>
-                    </div>
-                </div> <br>
-                <div class = "row">
-                    <div class = "col">
-                        Special Notes (If any special arrangements needed) <br> <input type = "text" name="notes" style="width: 750px; height: 100px;" >  <br><br><br>
-                        <input type = "submit" value = "  Submit  " name = "  submit  " span onmouseover="this.style.backgroundColor = 'yellow';" onmouseout="this.style.backgroundColor = 'white';"></span>
-                    </div>
-                </div>
-        </form>
-    </div>
-<?php
-if (isset($_POST['submit'])){
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $email = $_POST['email'];
-    $phone = $_POST['phonenum'];
-    $date = $_POST['resdate'];
-    $time = $_POST['time'];
-    $guests = $_POST['noguest'];
-    $place = $_POST['liketosit'];
-    $notes = $_POST['notes'];
-
-    include('db.php');
-
-    $sql = "insert into reservation_anuradha (fname , lname , email , phonenum ,resdate , time, noguest , liketosit , notes)
-    values ('$fname' , '$lname' , '$email' , '$phone' , '$date' , '$time' , '$guests' , '$place' , '$notes' )";
-
-    //geting data from database quary   
-
-    if($conn -> query($sql) === true){
-        echo "<p style=\"color:aliceblue\"> Your information is added successfully.<p>";
-    }
-    else {
-        echo "<p style=\"color:aliceblue\"> Error : <p>" .$conn->error;
-    }
-      }
-      ?>
-      <br><br>
-  
 
 
+    
 <!-- Contact us -->
 <h2 id="contact" style="text-align:center; color:aliceblue;">CONTACT US</h2><br>
 
@@ -280,7 +211,7 @@ if (isset($_POST['submit'])){
          values('$Name','$Phone_Number','$Email','$Subject','$Message')";
 
          if($conn -> query($sql) === true){
-          echo "<p style=\"color:aliceblue\">Your information is added successfully. We will contact you soon<p>";
+          echo "<h4 style=\"color:aliceblue\">Your information is added successfully. We will contact you soon<h4>";
         }
          else {
           echo "Error : " .$conn->error;
@@ -296,9 +227,13 @@ if (isset($_POST['submit'])){
       
 
 <!-- Leave us feedback -->
+<div style="color: aliceblue; text-align: center; font-size: larger;">
+<br><img class="img-fluid" img src="Images/Feedback001.webp" alt="feedback">
+</div>
+<!--<img class="img-fluid" img src="Images/feedback1.jpeg" alt="Leave us feedback"style= padding-left:550px;>-->
 <h2 id="Reservation" style="font-size: 45px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Give Us Your Feedback  </h2>
 <a style="font-size: 25px; text-align: center; font-family:cursive; color: aliceblue; padding-left:450px;"class="link active" href='feedback.php'> Through this feedback form</a>
-<h2 id="Reservation" style="font-size: 35px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Your FEEDBACK makes us better Coz your SPECIAL to us  </h2>
+<h2 id="Reservation" style="font-size: 35px; font-weight: bolder; text-align: center; font-family:cursive; color: aliceblue;"> Your FEEDBACK makes us better Coz you're SPECIAL to us..!  </h2>
 
 <br><br><br>
 
@@ -311,4 +246,4 @@ if (isset($_POST['submit'])){
 
     <a class="backtotop" href="#top"> <i class="fa-solid fa-arrow-up"></i></i> </a>
 
-<?php include 'footer.php'; ?>
+<?php include 'footer.php';?>

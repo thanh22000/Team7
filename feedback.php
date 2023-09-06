@@ -11,7 +11,7 @@
 
 <div class="row">
     <div class="col-md-6" style="color: aliceblue; text-align: center; font-size: larger; padding-left:90px;">
-              <img class="img-fluid" img src="Images/LeaveUsFeedback.jpg" alt="Contact Us">
+              <img class="img-fluid" img src="Images/LeaveUsFeedback.jpg" alt="Leave us feedback">
     </div>
     <div class="col-md-6" style="color: aliceblue;"> 
     <form action=" " method="POST" name="feedback" onsubmit="return validateform()">

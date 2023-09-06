@@ -37,7 +37,6 @@ function formContact()
 }
    
 
-
     //check the lenghth of the phone number
 function checknum(){
       let phonenum=(document.form1.phonenum.value).trim();
